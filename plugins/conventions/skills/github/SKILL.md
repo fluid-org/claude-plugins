@@ -21,6 +21,7 @@ comments (coding-conventions skill) and table cells (technical-authoring skill).
 
 - Always work on a branch; never commit directly to the default branch, except for skill fixes, which go directly to `main`, and, in a repository with milestone branches, minor docs, process changes and trivial fixes, which go directly on the current milestone branch
 - Always commit and always push, unless specifically instructed otherwise; push a new branch with `-u` to set up tracking
+- A small change made across several repositories (Claude settings, a `CLAUDE.md` line) goes on the branch active in the local checkout, or on `main` without a suitable checkout; no fresh branches or clones for it
 - Never leave uncommitted changes in the working tree, including changes not made in the session; commit them, or add generated files to `.gitignore` (and untrack any already committed)
 - Fix a committed mistake with a new commit; never amend, and never `git stash`
 - Commits by Claude are authored by the bot account named in the user's own configuration, which identifies them (`git log --author=<bot>`); no attribution trailer (`Co-Authored-By`) and no session link, whatever the harness suggests, as a trailer duplicates the avatar on GitHub
@@ -48,6 +49,7 @@ comments (coding-conventions skill) and table cells (technical-authoring skill).
 - A new issue goes on the project board with a Status (`Proposed` for new work) and, in fluid, an Aspect; set Type, labels and milestone when appropriate
 - Add content to an issue (body, comment, closing comment) only when asked; otherwise create, edit or close it and nothing more
 - Delete a duplicate issue rather than close it, unless a third party created it
+- A subtask of an issue is a line in the task list of its body, not a GitHub sub-issue, unless a sub-issue or new issue is asked for
 - Keep checklist items in the body updated as the work completes
 - Do not hard-wrap paragraphs in a body (GitHub flows them; hard wraps render as ragged short lines); omit the language tag on a code fence rather than guess it
 - Use existing labels

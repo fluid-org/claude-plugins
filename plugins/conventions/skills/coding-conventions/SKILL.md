@@ -5,6 +5,12 @@ description: Shared conventions for code in any language (comments, docstrings, 
 
 # Coding conventions
 
+## Recording guidance
+
+- Never save guidance to Claude's memory. Record a lasting rule in the skill it belongs to, in this plugin
+  (fluid-org/claude-plugins) or in a project's own skill if only that project needs it, and commit it.
+  Project state belongs in the issue tracker.
+
 Language-specific skills (agda-implementor, spec-implementor) add to these; correspondence with a
 specification (inventories, naming, diagnostics, corpus testing) is in spec-implementor.
 
@@ -51,6 +57,8 @@ specification (inventories, naming, diagnostics, corpus testing) is in spec-impl
 - Type annotations on the binding, not the expression.
 - Related definitions adjacent.
 - Wrap at about column 110; a little over is fine.
+- In fluid, no new JavaScript: scripts in Bash or Python, and code that must run on Node in PureScript
+  (a command of the command-line tool, say).
 
 ## Tests
 
@@ -58,9 +66,11 @@ specification (inventories, naming, diagnostics, corpus testing) is in spec-impl
 
 ## Commits
 
-- Commit each verified unit of work; conventions in the github skill.
+- Commit each verified unit of work without asking first; conventions in the github skill.
 
 ## Reporting
 
 - Report the current state, not how it got there (no pre-commit moves or intermediate names);
   mention history only when the user must act on it (a rebase to pull).
+- Leave out mistakes, failed attempts and problems resolved before the report, unless the user must
+  act on them.
