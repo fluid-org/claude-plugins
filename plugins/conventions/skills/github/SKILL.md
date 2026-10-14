@@ -53,6 +53,7 @@ comments (coding-conventions skill) and table cells (technical-authoring skill).
 - Keep checklist items in the body updated as the work completes
 - Do not hard-wrap paragraphs in a body (GitHub flows them; hard wraps render as ragged short lines); omit the language tag on a code fence rather than guess it
 - Use existing labels
+- An issue body describes the repository as it stands or will stand, never work in flight: no branch names, pull request numbers or interim states, which are stale once the work lands; refer to pending work by its issue
 - Link an external resource inline where the body mentions it, rather than in a **See also** paragraph
 - When an issue references other issues, end with a **See also** paragraph:
 
