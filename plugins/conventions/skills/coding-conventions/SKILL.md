@@ -55,6 +55,7 @@ specification (inventories, naming, diagnostics, corpus testing) is in spec-impl
 - Type annotations on the binding, not the expression.
 - Related definitions adjacent.
 - Wrap at about column 110; a little over is fine.
+- End every file with exactly one newline: no blank line at the end, and no missing final newline (symbolic links excepted).
 - In fluid, no new JavaScript: scripts in Bash or Python, and code that must run on Node in PureScript
   (a command of the command-line tool, say).
 
