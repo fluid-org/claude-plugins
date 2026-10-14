@@ -9,77 +9,56 @@ Direct, factual, conventional prose: state the thing and stop.
 
 ## Sentence construction
 
+Check every sentence of a draft against the rules below before sending it, including a sentence rewritten
+only for clarity; a rewrite for clarity alone reintroduces breaches.
+
+- **Negation on the verb.** Never put "no", "none", "nothing" or "neither" before a noun, whether the noun
+  is a subject, an object or the agent of a participle: "does not need a return statement", not "needs no
+  return"; "does not fix any length", not "fixes no length"; "is not bound in either branch", not "is bound
+  in neither branch". Where an affirmative statement says the same thing, prefer it: "admits values of
+  every length".
+- **No object relative clauses**, in which the head noun is the object of the verb inside the clause:
+  "the values no case matches", "the type that the expression synthesises", "the values matched by no
+  case", "every edge a rule adds". Make the head noun the subject of its modifier. Name the thing where a
+  term exists ("the residual", "the matched shapes"); otherwise use a passive participle with a plain agent
+  ("the type synthesised by the expression", "every edge added by a rule"); otherwise write a full
+  "which" clause with the negation on the verb ("the values which are not matched by any of the cases").
+  A possessive relative falls under the same rule: "a function with overlapping cases", not "a function
+  whose cases overlap".
 - No pithy constructions pivoting on a comma from assertion to contrast: "It's yours, not a leftover."
-- No verbless clause tacked on after a comma to qualify the preceding noun: "the class table entries,
-  empty for a type statement". Give it a verb ("which are empty for a type statement") or a separate
-  sentence.
-- Spell out logical connectives; prefer "because X" or "so that X" over a bare colon-assertion.
-  - Before: "The Boolean Jacobian instead records 1: disjunction cannot cancel."
-  - After: "The Boolean Jacobian instead records 1, because dependency information combines by disjunction and disjunction cannot cancel."
-- No cleft constructions: "X is what makes...", "this is where...", "is exactly...", "is precisely...". Use a direct verb with a named subject.
-  - Before: "Idempotent addition is what relates the algebra to an order."
-  - After: "Idempotent addition induces an order."
-  - Before: "The entry for price a is where they part company."
-  - After: "They differ at the entry for price a."
-- Do not coordinate two clauses with "and" where the second acts on the result of the first and ends on a pronoun pointing back at it. Subordinate the second clause instead, so the dependency is carried by the grammar rather than by word order.
-  - Before: "A match scrutinee synthesises a type, and each case checks against it."
-  - After: "A match scrutinee synthesises a type, against which each case is checked."
-  - Before: "every rule passes it down unchanged, and a return has no rule where it is empty" (the second "it" reads as the return).
-- Do not hang a comparison on a trailing "as in X" or "as X do", and never end a sentence on "do" or "does" standing in for an earlier verb phrase; name the shared thing and state the relation, or lead with "following".
-  - Before: "Matching a pattern against a shape takes the scrutinee's type into account, as the uncovered sets of Karachalias et al. do."
-  - After: "Matching a pattern against a shape takes the scrutinee's type into account, following the uncovered sets of Karachalias et al."
-- Avoid clause-final pro-forms ("leaves none", "the others", "the same holds", "so does") even where unambiguous; repeat the noun ("leaves an empty residual", "the remaining members") or restructure.
-- No zero relative clauses stacking a noun against a bare subject-verb ("every edge a rule adds"); use a
-  participle ("every edge added by a rule").
-  - Before: "Every edge a rule adds runs forward in evaluation order."
-  - After: "Every edge added by a rule points forward in evaluation order."
-- Object relative clauses, in which the head noun is the object of the verb inside the clause ("the
-  values that no case matches"), are banned in all three forms:
-  1. Relativiser dropped: "the values no case matches", "the type the expression synthesises", "the
-     variables the body assigns".
-  2. Relativiser present: "the values that no case matches", "the type which the expression synthesises".
-  3. Reduced to a passive participle whose agent carries a negation or a quantifier: "the values matched
-     by no case", "the shapes matched by every case", "a name bound by neither branch".
-
-  The fix is to make the head noun the subject of its own modifier:
-  - Name the thing where a term or metafunction exists: "the residual", not "the values that no case
-    matches"; "the matched shapes", not "the shapes the pattern matches".
-  - Otherwise, where the modifier is affirmative and its agent is a plain noun phrase, use a passive
-    participle: "variables assigned in the body", "the type synthesised by the expression".
-  - Otherwise, where the modifier carries a negation or a quantifier, write a full relative clause with
-    "which" or "that", put the negation on the verb, and use "any" under the negation: "the values which
-    are not matched by any case", not "the values matched by no case" and not "the values that no case
-    matches"; "the shapes which every case matches" is still an object relative, so write "the shapes
-    which are matched by every case".
-
-  Test: the noun before the modifier must be the grammatical subject of the modifier's verb, and no
-  "no", "neither", "every" or "each" may appear inside the agent phrase of a participle.
-  The test also catches a possessive relative, "a function whose cases overlap", where the head noun is
-  not the subject of "overlap": write "a function with overlapping cases".
-- A negation goes on the verb, not on a noun phrase, whether that phrase is the agent of a participle
-  (form 3 above) or the object of a verb: "does not fix any length", not "fixes no length"; "is not
-  bound in either branch", not "is bound in neither branch". Where an affirmative statement says the
-  same thing, prefer it: "admits values of every length".
-- When a sentence quantifies over a finite set it has already introduced, refer to that set definitely:
-  "not matched by any of the cases" (the cases of this match), not "not matched by any case"; "each of
-  the branches", not "each branch". This applies only when a specific set is in scope. A general claim
-  keeps the bare noun: "a variable pattern matches any shape".
-- Make a general claim in the plural rather than with a generic singular and its indefinite article.
-  - Before: "so a type never mentions an alias"
-  - After: "so types never mention aliases"
-  The singular stays where one particular thing is meant ("a variable pattern matches any shape" describes
-  each such pattern) and in lists, where items are plural noun phrases.
-- Do not repeat an article across the items of an enumeration that share it: "the residual and
-  remaining type", not "the residual and the remaining type".
-- Name things with nouns rather than free relative clauses: "matched shapes", not "what it matches"; "the residual", not "what is left over".
-- A symbol must be bound in the sentence or by a judgement form stated just before it; otherwise name the thing.
-  - Before: "A return checks its expression against τ" (nothing in the paragraph binds τ).
-  - After: "A return checks its expression against the return type."
-- Do not open a subclause with a bare abstract noun ("...: agreement, except where..."). Give it a subject and verb ("the two agree, except where...").
+- No verbless clause after a comma qualifying the preceding noun ("the class table entries, empty for a
+  type statement"); give it a verb ("which are empty for a type statement") or a separate sentence.
+- Spell out logical connectives ("because X", "so that X") rather than a bare colon-assertion: "records 1,
+  because disjunction cannot cancel", not "records 1: disjunction cannot cancel".
+- No cleft constructions ("X is what makes...", "this is where...", "is exactly...", "is precisely...");
+  use a direct verb with a named subject: "Idempotent addition induces an order", not "Idempotent addition
+  is what relates the algebra to an order".
+- Where a second clause acts on the result of the first, subordinate it rather than coordinating with
+  "and" and a pronoun: "A match scrutinee synthesises a type, against which each case is checked", not
+  "..., and each case checks against it".
+- Lead a comparison with "following" rather than a trailing "as in X" or "as X do", and never end a
+  sentence on "do" or "does" standing in for an earlier verb phrase: "takes the scrutinee's type into
+  account, following the uncovered sets of Karachalias et al."
+- Avoid clause-final pro-forms ("leaves none", "the others", "the same holds", "so does"); repeat the noun
+  or restructure.
+- Do not restate a point in a closing clause or sentence that the preceding text already makes.
+- Refer definitely to a finite set already introduced: "not matched by any of the cases", "each of the
+  branches". A general claim keeps the bare noun: "a variable pattern matches any shape".
+- Make a general claim in the plural: "so types never mention aliases", not "so a type never mentions an
+  alias". The singular stays where one particular thing is meant, and in lists.
+- Do not repeat an article across the items of an enumeration: "the residual and remaining type".
+- Name things with nouns rather than free relative clauses: "matched shapes", not "what it matches".
+- Bind a symbol in the sentence or by a judgement form stated just before it; otherwise name the thing:
+  "checks its expression against the return type", not "against τ" with τ unbound.
+- Do not open a subclause with a bare abstract noun ("...: agreement, except where..."); give it a subject
+  and verb ("the two agree, except where...").
 - No nested colons or semicolons within a sentence.
-- Never open a sentence with a metafunction name, a rule name, or other mathematics ("captures(s) is the set of ...", "var applies whenever ..."); lead with a word ("The set of ... is captures(s)", "The var rule applies whenever ...").
-- A condition takes "if" or "when", not "where": "undefined if two declarations share a name". "Where" reads as a place, so reserve it for quantifying over positions ("the rows differ where the pattern is a literal") and for binding a symbol ("where n is the arity").
-- State the goal before the construction: not "we require the meet to cohere" before saying what coherence achieves, and not "the coherence pays off", which implies an obligation never stated.
+- Never open a sentence with a metafunction name, a rule name, or other mathematics; lead with a word
+  ("The set of ... is captures(s)", "The var rule applies whenever ...").
+- A condition takes "if" or "when", not "where". Reserve "where" for positions ("the rows differ where the
+  pattern is a literal") and for binding a symbol ("where n is the arity").
+- State the goal before the construction, and the reason before the consequence: not "we require the meet
+  to cohere" before saying what coherence achieves.
 
 ## Word choice
 
