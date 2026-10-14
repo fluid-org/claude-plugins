@@ -69,6 +69,7 @@ only for clarity; a rewrite for clarity alone reintroduces breaches.
 - "Own" as a distinguishing qualifier ("the node's own positions"): state the distinction instead
   (the positions at the node itself, not those of its descendants).
 - Invented terms where standard ones exist: "translation" not "shift"; "the other factor" not "cofactor". Check a term is standard before leaning on it, and cite where useful. Do not coin terminology, in the text or in conversation ("foreign module", "fresh position"); use the document's own terms or plain description ("a module other than the current one").
+- "Meet" and "join" are nouns, not verbs: "the matched type is the meet of the scrutinee type and float", not "the scrutinee type meets float".
 - "though" as a subordinating conjunction: prefer "although". The fixed phrase "even though" and the adverbial "though" meaning however are unaffected.
 - Guidance-speak when the content is a trade-off: report the trade-off factually rather than telling the reader what they "should use".
 
