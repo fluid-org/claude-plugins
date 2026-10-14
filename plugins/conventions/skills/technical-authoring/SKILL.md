@@ -45,7 +45,9 @@ Check every sentence of a draft against these rules, including a sentence rewrit
   subject and verb.
 - No nested colons or semicolons.
 - Never open a sentence with mathematics, or with a keyword, name or other identifier that starts with a
-  lowercase letter (a rule or metafunction name, "mypy"): "The var rule applies...", "The type checker mypy...".
+  lowercase letter (a rule or metafunction name, "mypy"): "The var rule applies...". Restructure rather than
+  prefix a lowercase name with its kind: "For mypy, the code is unreachable", "is rejected by mypy", not "The
+  type checker mypy rejects".
 - Conditions take "if" or "when"; reserve "where" for positions and for binding a symbol ("where n is the
   arity").
 - Goal before construction, reason before consequence.
