@@ -22,28 +22,21 @@ checked in both directions; agreement of verdicts is not enough.
      helpers with no callers).
 3. One name must not mean different things on the two sides: the spec
    distinguishes override from extend, so the implementation does too.
-4. Diagnostics may refine the spec's single failure mode into specific reasons;
-   that is a sanctioned refinement. Name each reason after the prohibition or
-   premise it enforces, and word the message as the spec does where it
-   describes the failure. Its message follows the technical-authoring skill,
-   telegraphic like a table cell and in the form of the existing messages, and
-   states the expectation and the finding ("call expects 1 arguments, given 2").
+4. Diagnostics may refine the spec's single failure mode into specific reasons.
+   Name each reason after the prohibition or premise it enforces, and word its
+   message as the spec describes the failure: telegraphic, in the form of the
+   existing messages, stating the expectation and the finding ("call expects 1
+   arguments, given 2").
 5. Run the inventory comparison even when all tests pass; verdict checks miss
    misnamed functions, displaced terminology, dead helpers and stale taxonomy.
 
 ## Sequential check against the spec
 
-Check both directions in order, rather than the suspected parts first.
-
-Start with the specification and read it top down. For each judgement, rule and metafunction, find the
-definition in the implementation that carries the same name and serves the same purpose.
-
-Then read the implementation the same way. For each definition, find the construct of the same or a
-similar name in the specification. A definition without a single corresponding construct is renamed,
-moved to its construct, or deleted.
-
-Act at the point reached by the walk, so that any failure is traceable to the one changed
-definition.
+Check both directions in order, not the suspected parts first. Read the specification top down,
+finding for each judgement, rule and metafunction the implementation definition with the same name and
+purpose. Then read the implementation top down, finding for each definition its construct in the
+specification; a definition without exactly one is renamed, moved or deleted. Fix each discrepancy
+where the reading reaches it.
 
 ## Order of work
 
@@ -60,8 +53,7 @@ Python), so that a definition reads like its rule.
 ## Testing
 
 A test is a small program with an expected outcome: accepted, rejected, or
-producing particular output when run. Nothing else is observable, so nothing
-else is tested.
+producing particular output when run.
 
 - **Differential**: every program also runs under the reference
   implementation, and the test's category states the required relationship

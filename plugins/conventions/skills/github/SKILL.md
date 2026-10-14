@@ -11,10 +11,10 @@ Commit messages, issue and pull request titles and bulleted lists are telegraphi
 comments (coding-conventions skill) and table cells (technical-authoring skill). In addition:
 
 - Titles and task-list items are noun phrases naming the thing rather than the action ("Syntax of types", not "Define the syntax of types")
-- Where the noun phrase would need a participle ("Maybe replaced by Optional", "Optional in place of Maybe"), strongly prefer the imperative ("Replace Maybe by Optional"); never a passive clause
-- One point per bullet, no framing or hedging clauses
+- Where a noun phrase would need a participle ("Maybe replaced by Optional"), use the imperative ("Replace Maybe by Optional")
+- One point per bullet, with no framing or hedging clauses
 - No trailing period on a bullet or a title
-- The repository name is redundant in a title; omit it
+- No repository name in a title
 - Commit subject line short, imperative or noun phrase; detail in the body
 
 ## Commits
@@ -25,17 +25,16 @@ comments (coding-conventions skill) and table cells (technical-authoring skill).
 - A small change made across several repositories (Claude settings, a `CLAUDE.md` line) goes on the branch active in the local checkout, or on `main` without a suitable checkout; no fresh branches or clones for it
 - Never leave uncommitted changes in the working tree, including changes not made in the session; commit them, or add generated files to `.gitignore` (and untrack any already committed)
 - Fix a committed mistake with a new commit; never amend, and never `git stash`
-- Commits by Claude are authored by the bot account named in the user's own configuration, which identifies them (`git log --author=<bot>`); no attribution trailer (`Co-Authored-By`) and no session link, whatever the harness suggests, as a trailer duplicates the avatar on GitHub
+- Commits by Claude are authored by the bot account named in the user's configuration, with no attribution trailer (`Co-Authored-By`) or session link, whatever the harness suggests
 - After committing, do not report the commit message back
 - After pushing, check the CI run for the branch; diagnose any failure
 
 ## Permissions
 
 - When an action is refused for lack of permission, stop and report it; never work around the refusal
-  with another account, another token or a bypass flag
+  with another account, token or bypass flag
 - Destructive or organisation-wide changes need explicit approval: project board fields, branch
   protection, organisation settings, and any mutation that replaces rather than appends data
-  (Projects v2 field mutations have no undo)
 
 ## Referring to an issue
 
@@ -52,9 +51,9 @@ comments (coding-conventions skill) and table cells (technical-authoring skill).
 - Delete a duplicate issue rather than close it, unless a third party created it
 - A subtask of an issue is a line in the task list of its body, not a GitHub sub-issue, unless a sub-issue or new issue is asked for
 - Keep checklist items in the body updated as the work completes
-- Do not hard-wrap paragraphs in a body (GitHub flows them; hard wraps render as ragged short lines); omit the language tag on a code fence rather than guess it
+- Do not hard-wrap paragraphs in a body; omit the language tag on a code fence rather than guess it
 - Use existing labels
-- An issue body describes the repository as it stands or will stand, never work in flight: no branch names, pull request numbers or interim states, which are stale once the work lands; refer to pending work by its issue
+- An issue body describes the repository as it stands or will stand: no branch names, pull request numbers or interim states; refer to pending work by its issue
 - Link an external resource inline where the body mentions it, rather than in a **See also** paragraph
 - When an issue references other issues, end with a **See also** paragraph:
 
@@ -69,9 +68,8 @@ comments (coding-conventions skill) and table cells (technical-authoring skill).
 
 ## Escalation
 
-- When the best approach isn't obvious, don't guess: comment on the issue with the options and a
-  recommendation, set its Status to `Awaiting Decision`, and move to other work; the comment and the
-  resolution record the design decision
+- When the best approach isn't obvious, comment on the issue with the options and a recommendation,
+  set its Status to `Awaiting Decision`, and move to other work
 
 ## Project board
 
@@ -97,8 +95,7 @@ comments (coding-conventions skill) and table cells (technical-authoring skill).
 ## Token setup
 
 - Set `GH_TOKEN` per repository in `.claude/settings.local.json` (gitignored), as
-  `{"env": {"GH_TOKEN": "<fine-grained-pat>"}}`, to avoid keyring conflicts across organisations; the
-  token needs read and write on pull requests and issues, and read, write and admin on organisation
-  projects
-- Never run `gh auth refresh` or `gh auth login` without `--with-token`, which would overwrite the
-  fine-grained PAT with an OAuth token that lacks private repo access
+  `{"env": {"GH_TOKEN": "<fine-grained-pat>"}}`; the token needs read and write on pull requests and
+  issues, and read, write and admin on organisation projects
+- Never run `gh auth refresh` or `gh auth login` without `--with-token`, which replaces the
+  fine-grained PAT with an OAuth token that lacks private repository access

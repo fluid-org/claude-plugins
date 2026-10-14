@@ -28,8 +28,7 @@ with other implementations.
 - Before importing a name, check it is not already in scope: a name reaches a file through an `open`
   without `using` without ever being written, so check what every such open exports.
 - Name a synonym after what it denotes (`Tree`, `coKl`, `Fam-cat`), never by initials, primes or
-  digits (`FD`, `RS'`, `S1`). Once a narrowed open has absorbed most uses, a longer name for the rest
-  is cheap. When a binding appears only on its own `open` lines, spell it out; when it appears on one,
+  digits (`FD`, `RS'`, `S1`). When a binding appears only on its own `open` lines, spell it out; when it appears on one,
   drop it and apply the module in the open (`open M args using (…)`).
 - Bind a parameter's operations under its own name (`module 𝒞 = Category 𝒞`), not a decorated one
   (`𝒞C`); modules and terms have separate namespaces. In a telescope, `(let module 𝒞 = Category 𝒞)`
@@ -73,11 +72,8 @@ with other implementations.
 
 ## Issues and pull requests
 
-- When mentioning a GitHub issue, include the name of the issue and a link.
-- Open pull requests with an empty body: the commits are the record.
-- Work on a branch, never directly on main. Commit each verified unit of work as you go and push
-  the branch. Open a pull request for the user to merge; bump the parent repo's submodule pointer
-  once it merges.
+- Conventions in the github skill. In addition, open a pull request for the user to merge, and bump
+  the parent repository's submodule pointer once it merges.
 - Refer to commits by their messages, not their hashes.
 
 ## Performance
@@ -87,11 +83,10 @@ with other implementations.
   counts over timing; run the counting measurement first.
 - Three separate metrics: Agda type-checking time, GHC compile time, and binary run time. Time each
   on its own; never time a script that mixes them.
-- Compilation is incremental, so a mixed timing's compile share depends on what happened to be
-  stale and the total is meaningless. Let the compile finish untimed, then time the binary alone.
-- A change expected to be performance-neutral is validated by the type-check and the baseline
-  artefact comparison. Benchmark only changes that claim an effect or touch the measured code, and
-  before a long run state what is timed, with what instrument, and what a difference would mean.
+- Let the compile finish untimed, then time the binary alone; compilation is incremental, so a
+  mixed timing means nothing.
+- Validate a change expected to be performance-neutral by the type-check and the baseline artefact
+  comparison; benchmark only changes that claim an effect or touch the measured code.
 - The heap cap (`GHCRTS -M12G`, set by `watch-agda.sh`) turns divergence into exit 251 within minutes;
   low productivity in the GC summary means thrashing.
 - Cost is module application, not proving: a large `Miscellaneous` share in a profile is applications

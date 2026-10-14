@@ -7,9 +7,8 @@ description: Shared conventions for code in any language (comments, docstrings, 
 
 ## Recording guidance
 
-- Never save guidance to Claude's memory. Record a lasting rule in the skill it belongs to, in this plugin
-  (fluid-org/claude-plugins) or in a project's own skill if only that project needs it, and commit it.
-  Project state belongs in the issue tracker.
+- Never save guidance to Claude's memory. Record a lasting rule in the skill it belongs to, in this
+  plugin or in a project's own skill, and commit it. Project state belongs in the issue tracker.
 
 Language-specific skills (agda-implementor, spec-implementor) add to these; correspondence with a
 specification (inventories, naming, diagnostics, corpus testing) is in spec-implementor.
@@ -17,21 +16,17 @@ specification (inventories, naming, diagnostics, corpus testing) is in spec-impl
 ## Comments and docstrings
 
 - Comment only what the code cannot show: no process commentary, reasoning, source-file names,
-  history or plans. Plans and remaining work belong in the issue tracker, not the codebase. Sole
-  exception: a transitional definition (below).
+  history or plans, except for a transitional definition (below).
 - One line where possible, telegraphic, without articles, as in a table cell ("Collapse duplicate
   rows", not "This collapses the duplicate rows"); bare imperative for operations ("Collapse", not
   "Collapses"); contractions fine. Same in test fixtures.
 - No comment on a definition named after a construct of the specification or paper; the
   specification describes it. Refer to a construct by name, never by quoted notation.
-- Standard terms, in comments and identifiers alike; never coin a word or jargon ("carry no type",
-  not "typeless").
-- No code identifiers in a comment or docstring, since a rename leaves them stale; describe the
-  operation in words ("type resolution", not "resolve_type"). Parameters of the documented definition
-  are exempt.
+- Standard terms in comments and identifiers; never coin a word ("carry no type", not "typeless").
+- No code identifiers in a comment or docstring, except parameters of the documented definition;
+  describe the operation in words ("type resolution", not "resolve_type").
 - A transitional definition (a bridge between an old and a new representation, say) states the
-  anomaly and the change that removes it ("retire with the α-graph"), so that nothing new builds on
-  it; the plan itself stays in the issue tracker.
+  anomaly and the change that removes it ("retire with the α-graph").
 - A comment sits on the definition it describes, not on a caller.
 
 ## Identifiers
@@ -70,7 +65,5 @@ specification (inventories, naming, diagnostics, corpus testing) is in spec-impl
 
 ## Reporting
 
-- Report the current state, not how it got there (no pre-commit moves or intermediate names);
-  mention history only when the user must act on it (a rebase to pull).
-- Leave out mistakes, failed attempts and problems resolved before the report, unless the user must
-  act on them.
+- Report the current state, not how it got there; leave out history, mistakes, failed attempts and
+  problems already resolved, unless the user must act on them.
