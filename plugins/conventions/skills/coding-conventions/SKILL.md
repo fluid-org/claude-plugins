@@ -25,6 +25,9 @@ specification (inventories, naming, diagnostics, corpus testing) is in spec-impl
 - Standard terms in comments and identifiers; never coin a word ("carry no type", not "typeless").
 - No code identifiers in a comment or docstring, except parameters of the documented definition;
   describe the operation in words ("type resolution", not "resolve_type").
+- No notation from the specification or paper in a comment (`C[τs]`, `Γ ⊢ e`); write it in words,
+  naming parameters of the documented definition where needed. Prefer a name that makes the comment
+  unnecessary.
 - A transitional definition (a bridge between an old and a new representation, say) states the
   anomaly and the change that removes it ("retire with the α-graph").
 - A comment sits on the definition it describes, not on a caller.
