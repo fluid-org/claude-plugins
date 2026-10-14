@@ -104,7 +104,7 @@ only for clarity; a rewrite for clarity alone reintroduces breaches.
 
 ## Structure
 
-- After adding or changing text, reread the whole paragraph around it and check that it still flows: the sentence before the change must lead into it, the sentence after must follow from it, and an insertion must not separate a sentence from the text it continues. Move or reword the surrounding sentences where it does not.
+- After adding or changing text, reread the whole paragraph around it and check that it still flows: the sentence before the change must lead into it, the sentence after it must follow from it, and an insertion must not interrupt a sequence of sentences on a single topic. Where the paragraph no longer flows, move or reword the surrounding sentences.
 - When contrasting two things, frame the sentence around the one dimension of contrast and leave out machinery irrelevant to it (e.g. both maps oriented the same way, so the contrast is join- versus meet-preservation).
 - Prefer parallel headings for sibling sections; if two sections share their setup, consider a common parent that states the setup once.
 - Mark conjectures as conjectures; do not present a suspicion as a finding.
