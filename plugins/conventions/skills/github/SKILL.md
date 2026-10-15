@@ -52,7 +52,7 @@ comments (coding-conventions skill) and table cells (technical-authoring skill).
 - A subtask of an issue is a line in the task list of its body, not a GitHub sub-issue, unless a sub-issue or new issue is asked for
 - Keep checklist items in the body updated as the work completes
 - Do not hard-wrap paragraphs in a body; omit the language tag on a code fence rather than guess it
-- Use existing labels
+- Use existing labels; give a new label no description
 - An issue body describes the repository as it stands or will stand: no branch names, pull request numbers or interim states; refer to pending work by its issue
 - Link an external resource inline where the body mentions it, rather than in a **See also** paragraph
 - When an issue references other issues, end with a **See also** paragraph:
