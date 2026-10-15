@@ -109,6 +109,13 @@ Check every sentence of a draft against these rules, including a sentence rewrit
   definitions change.
 - Name a macro after its rendering (\baseType for base-type), and rename it when the rendering changes.
 - After a build, look at each changed page: nothing may run off the page or into the margin.
+- Unless instructed otherwise, make edits to a LaTeX document in change markup, prose, rules and figures
+  alike: `\added`, `\deleted` and `\replaced{new}{old}` inline, the capitalised variants for a margin change
+  bar, and `AddedBlock` and `DeletedBlock` for whole paragraphs or display material. Rewrite a section body
+  as a `DeletedBlock` of the old text followed by an `AddedBlock` of the new.
+- End the old text inside `\replaced` with a space, so that the deleted and added runs do not abut.
+- Markup is accepted later, in a commit titled "Change markup accepted"; the final build mode renders the
+  clean version (in PurePy, `make -B paper.pdf FINAL=1`, or `PurePy-spec.pdf`).
 - Align the side conditions of a definition alike, all in the condition column or all on their own
   line, with none left overfull. A bare "otherwise" follows its equation after a `\quad`, in parentheses.
 
