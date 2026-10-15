@@ -38,8 +38,8 @@ specification (inventories, naming, diagnostics, corpus testing) is in spec-impl
   no-match path), not an image (`rFall`) and not by initials.
 - Follow the specification's or paper's metavariables, not a library's: one name per sort (`cxt` for
   every context, whether the paper writes Γ or Δ; `ρ` for environments; `v`, `u` for values). Where
-  names run short, a suffix naming what was added (`cxt_αs`, the context with type parameters), not
-  a digit.
+  names run short, a prime (`cxt'`); a suffix naming the content (`cxt_αs`, the context of type
+  parameters) only where a second prime would be needed; never a digit.
 
 ## Code
 
