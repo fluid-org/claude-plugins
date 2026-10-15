@@ -109,6 +109,7 @@ Check every sentence of a draft against these rules, including a sentence rewrit
   definitions change.
 - Name a macro after its rendering (\baseType for base-type), and rename it when the rendering changes.
 - After a build, look at each changed page: nothing may run off the page or into the margin.
+- Align subfigures placed side by side at the top, and their captions at the bottom.
 - Unless instructed otherwise, make edits to a LaTeX document in change markup, prose, rules and figures
   alike: `\added`, `\deleted` and `\replaced{new}{old}` inline, the capitalised variants for a margin change
   bar, and `AddedBlock` and `DeletedBlock` for whole paragraphs or display material. Rewrite a section body
