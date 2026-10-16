@@ -63,6 +63,10 @@ Load the coding-conventions skill first; it holds the rules shared with other im
   mixed timing means nothing.
 - Validate a change expected to be performance-neutral by the type-check and the baseline artefact
   comparison; benchmark only changes that claim an effect or touch the measured code.
+- The heap cap (`GHCRTS -M12G`, set by `watch-agda.sh`) turns divergence into exit 251 within minutes;
+  low productivity in the GC summary means thrashing.
+- Cost is module application, not proving: a large `Miscellaneous` share in a profile is applications
+  and interfaces. Reduce what is copied; tuning arguments does not help.
 - Narrow every `open … public` with a `using` list, binding the application once:
 
       private
@@ -70,5 +74,6 @@ Load the coding-conventions skill first; it holds the rules shared with other im
       open GF
       open GF public using (f; g)
 
-- Give a module the smallest telescope its contents need; split a large parameterised module so that
-  consumers instantiate only what they use, after checking what each consumer references.
+- Give a module the smallest telescope its contents need. Splitting a large parameterised module so
+  that consumers instantiate only what they use is the most effective change; check what each consumer
+  references first.
