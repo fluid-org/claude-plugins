@@ -68,12 +68,11 @@ Shared by the Agda and Isabelle skills, which add their own tooling and pitfalls
   State the mathematics; the paper cites the mechanisation, not the reverse.
 - Name a definition after the construct it mechanises: a judgement after its judgement, a rule after
   its rule name, an auxiliary function after its metafunction. Where the host language reserves the
-  spec's name, use the nearest name and record the reason in the skill.
+  spec's name, use the nearest free name.
 - Run every non-trivial check as a background Bash task with an explicit `timeout`; never two checkers
   over one build directory.
 - Open a pull request for the user to merge; bump the parent repository's submodule pointer once it
   merges. Refer to commits by their messages, not their hashes.
-- Measure line width in rendered characters, not bytes: a symbol escape counts as one.
 
 ## Tests
 
