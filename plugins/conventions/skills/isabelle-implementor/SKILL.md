@@ -28,8 +28,12 @@ spec, running checkers, pull requests).
 
 ## Definitions
 
-- A spec metafunction is a `fun`; `fun` completes missing patterns with `undefined`, so a partial
-  function such as composition of outcomes is written with just its defined equations.
+- A spec metafunction is a `fun`, or a `definition` when not recursive. A metafunction the spec leaves
+  undefined on some arguments returns `option`, `Some` exactly where the spec defines it, and a rule
+  using it has the premise `f x = Some y`, as the spec's rule is inapplicable there. Never leave
+  patterns missing: `fun` completes them with `undefined`, about which nothing can be proved.
+- One spec function over several sorts (`binds` on patterns and statements) is one `fun` per sort,
+  suffixed with the sort where the names would clash (`binds_pat`).
 - Monadic propagation in the spec (the `mlet` binder) is a bind over results, so one rule covers
   the value and abort cases as the spec's rule does; a separate rule only where the spec has one.
 - A short name for a constructor term (`true` for the Boolean literal value) is an `abbreviation`,
@@ -49,8 +53,9 @@ spec, running checkers, pull requests).
 
 ## Running isabelle
 
-- `isabelle build -o document=false -D .` in the session directory, as a background Bash task with
-  `timeout` 600000; the session's `ROOT` lists the theories. Errors: `isabelle build_log -H Error
-  <session>`.
+- `make build` in the session directory, as a background Bash task with `timeout` 600000; it checks
+  the proofs and builds the document. Errors: `isabelle build_log -H Error <session>`.
+- Two builds of one session at once fail on the session database (`SQLITE_CONSTRAINT_PRIMARYKEY`); if
+  the user is building, wait and rerun.
 - Only the first failing command of a theory is reported; fix it and rebuild.
 - `line-width.py` in this directory lists overruns of the line width in rendered characters.
