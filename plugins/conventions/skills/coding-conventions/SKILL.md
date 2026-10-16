@@ -9,6 +9,7 @@ description: Shared conventions for code in any language (comments, docstrings, 
 
 - Never save guidance to Claude's memory. Record a lasting rule in the skill it belongs to, in this
   plugin or in a project's own skill, and commit it. Project state belongs in the issue tracker.
+- Writing a skill: see the skill-authoring skill.
 
 Language-specific skills (agda-implementor, isabelle-implementor, spec-implementor) add to these;
 correspondence with a specification (inventories, naming, diagnostics, corpus testing) is in
