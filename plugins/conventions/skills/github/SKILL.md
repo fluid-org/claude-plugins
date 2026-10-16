@@ -50,7 +50,8 @@ comments (coding-conventions skill) and table cells (technical-authoring skill).
 - Add content to an issue (body, comment, closing comment) only when asked; otherwise create, edit or close it and nothing more
 - Delete a duplicate issue rather than close it, unless a third party created it
 - A subtask of an issue is a line in the task list of its body, not a GitHub sub-issue, unless a sub-issue or new issue is asked for
-- Keep checklist items in the body updated as the work completes
+- Keep checklist items in the body updated as the work completes: open items first, then a line
+  `Done/dropped:` followed by the checked items, with a dropped item struck through (`- [x] ~~item~~`)
 - Do not hard-wrap paragraphs in a body; omit the language tag on a code fence rather than guess it
 - Use existing labels; give a new label no description
 - An issue body describes the repository as it stands or will stand: no branch names, pull request numbers or interim states; refer to pending work by its issue
