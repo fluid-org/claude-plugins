@@ -69,8 +69,8 @@ Shared by the Agda and Isabelle skills.
   State the mathematics; the paper cites the mechanisation, not the reverse.
 - Run every non-trivial check as a background Bash task with an explicit `timeout`; never two checkers
   over one build directory.
-- Open a pull request for the user to merge; bump the parent repository's submodule pointer once it
-  merges. Refer to commits by their messages, not their hashes.
+- Pull requests as in the github skill; bump the parent repository's submodule pointer once one merges.
+  Refer to commits by their messages, not their hashes.
 
 ## Tests
 
