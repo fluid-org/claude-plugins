@@ -9,3 +9,5 @@ Load the coding-conventions skill first; it holds the rules shared with other im
 
 - Line width in rendered characters: a symbol escape counts as one, a control escape such as a
   subscript as none. `line-width.py` in this directory lists overruns.
+- Names come from the specification's PDF, never its LaTeX source: a macro name or file name is not a
+  term of the specification.
