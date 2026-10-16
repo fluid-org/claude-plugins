@@ -83,7 +83,8 @@ comments (coding-conventions skill) and table cells (technical-authoring skill).
 
 ## Pull requests
 
-- Open a pull request when the branch needs review; otherwise push the branch and report it
+- Open a pull request only when asked to submit the branch for review; otherwise push the branch and
+  report it
 - Titles are noun phrases or imperatives, in the terse style above
 - The body is empty, or `Closes #N` alone: no summary of the changes, no attribution footer, no session link
 - The developer reviews the PR; apply requested changes as new commits on the same branch
