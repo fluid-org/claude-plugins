@@ -116,7 +116,7 @@ Check every sentence of a draft against these rules, including a sentence rewrit
   as a `DeletedBlock` of the old text followed by an `AddedBlock` of the new.
 - End the old text inside `\replaced` with a space, so that the deleted and added runs do not abut.
 - Markup is accepted later, in a commit titled "Change markup accepted"; the final build mode renders the
-  clean version (in PurePy, `make -B paper.pdf FINAL=1`, or `PurePy-spec.pdf`).
+  clean version.
 - Align the side conditions of a definition alike, all in the condition column or all on their own
   line, with none left overfull. A bare "otherwise" follows its equation after a `\quad`, in parentheses.
 

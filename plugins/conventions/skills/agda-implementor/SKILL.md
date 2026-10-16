@@ -5,9 +5,7 @@ description: House conventions for writing Agda. Use whenever writing or editing
 
 # Agda implementation conventions
 
-Load the coding-conventions skill first; it holds the comment, identifier and commit rules shared
-with other implementations, and the rules shared with the Isabelle skill (comments, naming after the
-spec, running checkers, pull requests).
+Load the coding-conventions skill first; it holds the rules shared with other implementations.
 
 ## Comments
 
@@ -46,18 +44,6 @@ spec, running checkers, pull requests).
   once, and steps whose stated type documents them. `inline-locals.py FILE [--apply]` in this directory
   inlines the one-use single-line untyped locals and reports the rest; check line widths afterwards.
 
-## Elaboration pitfalls
-
-- Unification cannot invert defined functions under `map`/`foldr`; pass the blocked implicits
-  explicitly (`{C = …}`). Implicit binders that are only ever applied need type ascriptions
-  (`∀ {G S : Gr}`).
-- `with e in eq` abstracts `e` from the goal and breaks lemmas that mention `e`. When the scrutinee
-  occurs in helper types, use a case helper instead
-  (`bool-case : ∀ b → (b ≡ true → A) → (b ≡ false → A) → A`).
-- A `where` function cannot refine the parent clause's variables by matching an equality; make the
-  refined thing an explicit argument of a helper and match `≡-refl` there, dot-patterning the other
-  side.
-
 ## Running agda
 
 - Every non-trivial check: `bash ~/.claude/bin/watch-agda.sh <targets>` as a background Bash task with
@@ -65,9 +51,6 @@ spec, running checkers, pull requests).
 - `pgrep -x agda` before a check; the build directory is `_build`.
 - No Monitor tool or detached runs. If a check would exceed ten minutes, split it into sequential
   `watch-agda.sh` calls on intermediate targets.
-- The log is truncated per run: read the RTS statistics before the next check.
-- `touch` does not invalidate an interface; change a character.
-- `-v` flags are ignored; bisect with probe files.
 
 ## Performance
 
@@ -80,10 +63,6 @@ spec, running checkers, pull requests).
   mixed timing means nothing.
 - Validate a change expected to be performance-neutral by the type-check and the baseline artefact
   comparison; benchmark only changes that claim an effect or touch the measured code.
-- The heap cap (`GHCRTS -M12G`, set by `watch-agda.sh`) turns divergence into exit 251 within minutes;
-  low productivity in the GC summary means thrashing.
-- Cost is module application, not proving: a large `Miscellaneous` share in a profile is applications
-  and interfaces. Reduce what is copied; tuning arguments does not help.
 - Narrow every `open … public` with a `using` list, binding the application once:
 
       private
@@ -91,6 +70,5 @@ spec, running checkers, pull requests).
       open GF
       open GF public using (f; g)
 
-- Give a module the smallest telescope its contents need. Splitting a large parameterised module so
-  consumers instantiate only what they use is the biggest lever; check what each consumer references
-  first.
+- Give a module the smallest telescope its contents need; split a large parameterised module so that
+  consumers instantiate only what they use, after checking what each consumer references.

@@ -45,7 +45,7 @@ adjust the failing test before touching the checker.
 
 ## Implementation style
 
-Write in the functional subset of the host language (for a Python checker, PurePy-like Python): no
+Write in the functional subset of the host language: no
 reassignment of a variable once bound, no in-place mutation, no loops that accumulate into a variable.
 Build each value in one expression, by comprehension, recursion or a fold (`functools.reduce` in
 Python), so that a definition reads like its rule.
