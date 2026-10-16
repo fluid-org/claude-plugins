@@ -36,10 +36,11 @@ comments (coding-conventions skill) and table cells (technical-authoring skill).
 - Destructive or organisation-wide changes need explicit approval: project board fields, branch
   protection, organisation settings, and any mutation that replaces rather than appends data
 
-## Referring to an issue or pull request
+## Referring to an issue, pull request or branch
 
 - Give its number, title and URL: #181, Classes for built-in types,
   https://github.com/OWNER/REPO/issues/181; likewise for a pull request, with its `pull` URL
+- A branch by name and URL: `247-syntax`, https://github.com/OWNER/REPO/tree/247-syntax
 
 ## Issues
 
@@ -82,7 +83,7 @@ comments (coding-conventions skill) and table cells (technical-authoring skill).
 
 ## Pull requests
 
-- Open a pull request only when asked; otherwise push the branch and report it
+- Open a pull request when the branch needs review; otherwise push the branch and report it
 - Titles are noun phrases or imperatives, in the terse style above
 - The body is empty, or `Closes #N` alone: no summary of the changes, no attribution footer, no session link
 - The developer reviews the PR; apply requested changes as new commits on the same branch
