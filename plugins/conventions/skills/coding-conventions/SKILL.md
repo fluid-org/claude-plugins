@@ -1,6 +1,6 @@
 ---
 name: coding-conventions
-description: Shared conventions for code in any language (comments, docstrings, identifiers, defensive code, commit granularity). Use whenever writing or editing code, alongside the language-specific skill (agda-implementor, spec-implementor).
+description: Shared conventions for code in any language (comments, docstrings, identifiers, defensive code, commit granularity). Use whenever writing or editing code, alongside the language-specific skill (agda-implementor, isabelle-implementor, spec-implementor).
 ---
 
 # Coding conventions
@@ -10,8 +10,9 @@ description: Shared conventions for code in any language (comments, docstrings, 
 - Never save guidance to Claude's memory. Record a lasting rule in the skill it belongs to, in this
   plugin or in a project's own skill, and commit it. Project state belongs in the issue tracker.
 
-Language-specific skills (agda-implementor, spec-implementor) add to these; correspondence with a
-specification (inventories, naming, diagnostics, corpus testing) is in spec-implementor.
+Language-specific skills (agda-implementor, isabelle-implementor, spec-implementor) add to these;
+correspondence with a specification (inventories, naming, diagnostics, corpus testing) is in
+spec-implementor.
 
 ## Comments and docstrings
 
@@ -58,6 +59,21 @@ specification (inventories, naming, diagnostics, corpus testing) is in spec-impl
 - End every file with exactly one newline: no blank line at the end, and no missing final newline (symbolic links excepted).
 - In fluid, no new JavaScript: scripts in Bash or Python, and code that must run on Node in PureScript
   (a command of the command-line tool, say).
+
+## Proof assistants
+
+Shared by the Agda and Isabelle skills, which add their own tooling and pitfalls.
+
+- Never cite the paper or specification in a comment (sections, figures, rule names as references).
+  State the mathematics; the paper cites the mechanisation, not the reverse.
+- Name a definition after the construct it mechanises: a judgement after its judgement, a rule after
+  its rule name, an auxiliary function after its metafunction. Where the host language reserves the
+  spec's name, use the nearest name and record the reason in the skill.
+- Run every non-trivial check as a background Bash task with an explicit `timeout`; never two checkers
+  over one build directory.
+- Open a pull request for the user to merge; bump the parent repository's submodule pointer once it
+  merges. Refer to commits by their messages, not their hashes.
+- Measure line width in rendered characters, not bytes: a symbol escape counts as one.
 
 ## Tests
 

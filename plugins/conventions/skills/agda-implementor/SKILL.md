@@ -6,12 +6,11 @@ description: House conventions for writing Agda. Use whenever writing or editing
 # Agda implementation conventions
 
 Load the coding-conventions skill first; it holds the comment, identifier and commit rules shared
-with other implementations.
+with other implementations, and the rules shared with the Isabelle skill (comments, naming after the
+spec, running checkers, pull requests).
 
 ## Comments
 
-- Never cite the paper (sections, figures, "paper:"). State the mathematics; the paper cites the Agda,
-  not the reverse.
 - `line-width.py` in this directory lists overruns of the line width and, with `--joins`, wrapped
   groups that would fit on one line.
 
@@ -63,18 +62,12 @@ with other implementations.
 
 - Every non-trivial check: `bash ~/.claude/bin/watch-agda.sh <targets>` as a background Bash task with
   `timeout` 600000. Without the timeout a run over 120 s is killed and reported as interrupted.
-- Never two agda processes over one `_build`: `pgrep -x agda` first.
+- `pgrep -x agda` before a check; the build directory is `_build`.
 - No Monitor tool or detached runs. If a check would exceed ten minutes, split it into sequential
   `watch-agda.sh` calls on intermediate targets.
 - The log is truncated per run: read the RTS statistics before the next check.
 - `touch` does not invalidate an interface; change a character.
 - `-v` flags are ignored; bisect with probe files.
-
-## Issues and pull requests
-
-- Conventions in the github skill. In addition, open a pull request for the user to merge, and bump
-  the parent repository's submodule pointer once it merges.
-- Refer to commits by their messages, not their hashes.
 
 ## Performance
 
