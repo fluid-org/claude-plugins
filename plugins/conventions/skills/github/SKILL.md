@@ -36,10 +36,10 @@ comments (coding-conventions skill) and table cells (technical-authoring skill).
 - Destructive or organisation-wide changes need explicit approval: project board fields, branch
   protection, organisation settings, and any mutation that replaces rather than appends data
 
-## Referring to an issue
+## Referring to an issue or pull request
 
 - Give its number, title and URL: #181, Classes for built-in types,
-  https://github.com/OWNER/REPO/issues/181
+  https://github.com/OWNER/REPO/issues/181; likewise for a pull request, with its `pull` URL
 
 ## Issues
 
