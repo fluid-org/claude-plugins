@@ -14,6 +14,6 @@ and comments apply to skills and are not repeated here.
 - No facts the repository already records, such as identifiers or file layout.
 - A rule goes in the most general skill whose every case it fits; refer to another skill rather than
   restate its rules.
-- Examples free of any one project's names, except in that project's own skill.
+- No project-specific details in a shared skill.
 - Identified pitfalls don't become skills; by default add to the skill only on request.
 - Before adding a rule, check the skill and the skills it loads for one that already covers it.
