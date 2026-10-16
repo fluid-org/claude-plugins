@@ -32,8 +32,8 @@ spec, running checkers, pull requests).
   function such as composition of outcomes is written with just its defined equations.
 - Monadic propagation in the spec (the `mlet` binder) is a bind over results, so one rule covers
   the value and abort cases as the spec's rule does; a separate rule only where the spec has one.
-- A definition used as a value in rules and proofs (`true`, `false`) is a `definition`; unfold it in
-  proofs (`simp: true_def false_def`) rather than proving disequalities about it.
+- A short name for a constructor term (`true` for the Boolean literal value) is an `abbreviation`,
+  not a `definition`, so proofs see the constructors and goals print the short name.
 
 ## Proofs
 
