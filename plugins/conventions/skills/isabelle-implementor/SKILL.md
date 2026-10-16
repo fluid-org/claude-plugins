@@ -25,10 +25,11 @@ spec, running checkers, pull requests).
 
 ## Definitions
 
-- A spec metafunction is a `fun`, or a `definition` when not recursive. A metafunction the spec leaves
-  undefined on some arguments returns `option`, `Some` exactly where the spec defines it, and a rule
-  using it has the premise `f x = Some y`, as the spec's rule is inapplicable there. Never leave
-  patterns missing: `fun` completes them with `undefined`, about which nothing can be proved.
+- A spec metafunction is a `fun`, or a `definition` when not recursive. For one the spec leaves
+  undefined on some arguments, choose by its role. Returning `option` makes definedness a fact that
+  rules (a premise `f x = Some y`) and proofs can use. Leaving patterns missing, which `fun` completes
+  with `undefined`, suits a function only ever applied within its domain, at the cost that nothing
+  can be proved about the remaining cases.
 - One spec function over several sorts is one `fun` per sort, suffixed with the sort where the names
   would clash.
 - A monadic bind in the conclusion of a spec rule is a function on results, so one rule covers the
