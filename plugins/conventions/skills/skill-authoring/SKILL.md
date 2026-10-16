@@ -15,5 +15,5 @@ and comments apply to skills and are not repeated here.
 - A rule goes in the most general skill whose every case it fits; refer to another skill rather than
   restate its rules.
 - Examples free of any one project's names, except in that project's own skill.
-- A tool's pitfall goes in that tool's skill, as the behaviour and the remedy.
+- Identified pitfalls don't become skills; by default add to the skill only on request.
 - Before adding a rule, check the skill and the skills it loads for one that already covers it.
