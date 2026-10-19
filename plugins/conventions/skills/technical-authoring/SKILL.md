@@ -85,6 +85,8 @@ Check every sentence of a draft against these rules, including a sentence rewrit
 - Keep a figure caption to a single line where possible.
 - Table cells, figure captions and rule side conditions omit articles ("Rebinds variable"). A gloss in
   apposition keeps one leading article and no other: "head, a literal, class or list of length n".
+- Clarity takes precedence over telegraphic style: keep any word without which the text becomes ambiguous
+  or hard to read.
 
 ## Comments and checklists
 
