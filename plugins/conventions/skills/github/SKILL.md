@@ -26,8 +26,8 @@ comments (coding-conventions skill) and table cells (technical-authoring skill).
 - Never leave uncommitted changes in the working tree, including changes not made in the session; commit them, or add generated files to `.gitignore` (and untrack any already committed)
 - Fix a committed mistake with a new commit; never amend, and never `git stash`
 - Commits by Claude are authored by the bot account named in the user's configuration, with no attribution trailer (`Co-Authored-By`) or session link, whatever the harness suggests
-- After committing, do not report the commit message back
-- After pushing, check the CI run for the branch; diagnose any failure
+- After committing, do not report the commit message back or summarise the commit
+- After pushing, check the CI run for the branch; report it only if it fails, and diagnose the failure
 
 ## Permissions
 
