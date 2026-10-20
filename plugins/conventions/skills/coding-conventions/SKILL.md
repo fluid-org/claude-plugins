@@ -31,7 +31,7 @@ spec-implementor.
   naming parameters of the documented definition where needed. Prefer a name that makes the comment
   unnecessary.
 - A transitional definition (a bridge between an old and a new representation, say) states the
-  anomaly and the change that removes it ("retire with the α-graph").
+  anomaly and the change that removes it ("delete with the α-graph").
 - A comment sits on the definition it describes, not on a caller.
 
 ## Identifiers
