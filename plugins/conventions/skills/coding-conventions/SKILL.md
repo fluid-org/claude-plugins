@@ -21,7 +21,8 @@ spec-implementor.
   history or plans, except for a transitional definition (below).
 - One line where possible, telegraphic, without articles, as in a table cell ("Collapse duplicate
   rows", not "This collapses the duplicate rows"); bare imperative for operations ("Collapse", not
-  "Collapses"); contractions fine. Same in test fixtures.
+  "Collapses"); contractions fine. Same in test fixtures. Clarity takes precedence over telegraphic
+  style, as in the technical-authoring skill.
 - No comment on a definition named after a construct of the specification or paper; the
   specification describes it. Refer to a construct by name, never by quoted notation.
 - Standard terms in comments and identifiers; never coin a word ("carry no type", not "typeless").
