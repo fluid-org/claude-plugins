@@ -23,6 +23,9 @@ spec-implementor.
   rows", not "This collapses the duplicate rows"); bare imperative for operations ("Collapse", not
   "Collapses"); contractions rather than formal verbs ("can't", not "cannot"). Same in test fixtures. Clarity takes precedence over telegraphic
   style, as in the technical-authoring skill.
+- A comment speaks of the definition it sits on, as an operation or a noun phrase, never as a bare
+  fact about the domain: "Bind a function at its type when its signature has no type parameters", not
+  "A signature without type parameters is a type". A fact may follow as the reason ("..., since ...").
 - No comment on a definition named after a construct of the specification or paper; the
   specification describes it. Refer to a construct by name, never by quoted notation.
 - Standard terms in comments and identifiers; never coin a word ("carry no type", not "typeless").
