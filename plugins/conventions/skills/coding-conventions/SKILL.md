@@ -23,7 +23,7 @@ spec-implementor.
   rows", not "This collapses the duplicate rows"); bare imperative for operations ("Collapse", not
   "Collapses"); contractions rather than formal verbs ("can't", not "cannot"). Same in test fixtures.
   Clarity takes precedence over telegraphic style, as in the technical-authoring skill.
-- A telegraphic comment has no full stop; a comment of several sentences is prose and ends with one.
+- A comment of several sentences is prose and ends with a full stop; a telegraphic comment omits the full stop.
 - A comment speaks of the definition it sits on, as an operation or a noun phrase, never as a bare
   fact about the domain: "Bind a function at its type when its signature has no type parameters", not
   "A signature without type parameters is a type". A fact may follow as the reason ("..., since ...").
