@@ -11,6 +11,6 @@ Load the coding-conventions skill first; it holds the rules shared with other im
   subscript as none. `line-width.py` in this directory lists overruns.
 - Names come from the specification's PDF, never its LaTeX source: a macro name or file name is not a
   term of the specification.
-- Check in proportion to the change: a comment or rename, the main session alone; a definition that
-  reaches generated code, the export and its tests as well; a rule, the corpus run as well. Batch small
-  edits into one check and one commit.
+- While iterating, as in a review, check each change by building the session alone and commit it;
+  run the code export, its tests and the corpus once the iteration is complete. Pushing starts the full
+  build on GitHub, so push a batch of small changes rather than each one.
