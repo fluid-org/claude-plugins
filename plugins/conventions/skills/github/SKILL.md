@@ -55,6 +55,7 @@ comments (coding-conventions skill) and table cells (technical-authoring skill).
 - Keep checklist items in the body updated as the work completes: open items first, then a line
   `Done/dropped:` followed by the checked items, with a dropped item struck through (`- [x] ~~item~~`)
 - Do not hard-wrap paragraphs in a body; omit the language tag on a code fence rather than guess it
+- No headings in a body other than **See also**, except in meeting issues
 - Use existing labels; give a new label no description
 - An issue body describes the repository as it stands or will stand: no branch names, pull request numbers or interim states; refer to pending work by its issue
 - Link an external resource inline where the body mentions it, rather than in a **See also** paragraph
