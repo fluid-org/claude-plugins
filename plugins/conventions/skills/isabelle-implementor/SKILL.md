@@ -13,4 +13,5 @@ Load the coding-conventions skill first; it holds the rules shared with other im
   term of the specification.
 - While iterating, as in a review, check each change by building the session alone and commit it;
   run the code export, its tests and the corpus once the iteration is complete. Pushing starts the full
-  build on GitHub, so push a batch of small changes rather than each one.
+  build on GitHub, so push a batch of small changes rather than each one. A change only to comments or
+  documentation needs no build.
