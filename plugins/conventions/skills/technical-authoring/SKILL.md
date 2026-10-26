@@ -44,6 +44,7 @@ Check every sentence of a draft against these rules, including a sentence rewrit
 - Do not open a subclause with a bare abstract noun ("...: agreement, except where..."); give it a
   subject and verb.
 - No nested colons or semicolons.
+- No comma before a vocative that follows a short formula of greeting or thanks.
 - Never open a sentence with mathematics, or with a keyword, name or other identifier that starts with a
   lowercase letter (a rule or metafunction name, "mypy"): "The var rule applies...". Restructure rather than
   prefix a lowercase name with its kind: "For mypy, the code is unreachable", "is rejected by mypy", not "The
