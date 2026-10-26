@@ -7,13 +7,11 @@ description: Conventions for commits, GitHub issues, pull requests, the project 
 
 ## Terse style
 
-Commit messages, issue and pull request titles and bulleted lists are telegraphic, in the style of
-comments (coding-conventions skill) and table cells (technical-authoring skill). In addition:
+Commit messages, issue and pull request titles and bulleted lists are telegraphic, as defined in the
+technical-authoring skill. In addition:
 
 - Titles and task-list items are noun phrases naming the thing rather than the action ("Syntax of types", not "Define the syntax of types")
 - Where a noun phrase would need a participle ("Maybe replaced by Optional"), use the imperative ("Replace Maybe by Optional")
-- One point per bullet, with no framing or hedging clauses
-- No trailing period on a bullet or a title
 - No repository name in a title
 - Commit subject line short, imperative or noun phrase; detail in the body
 

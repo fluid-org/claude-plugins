@@ -83,11 +83,14 @@ Check every sentence of a draft against these rules, including a sentence rewrit
 
 ## Telegraphic text
 
+Telegraphic text omits articles and a final full stop, and makes one point per item, without framing or
+hedging clauses ("Rebinds variable"). Text of several sentences is prose, with full stops. Clarity takes
+precedence over telegraphic style: keep any word without which the text becomes ambiguous or hard to read.
+
+- Table cells, figure captions, rule side conditions and the items of a bulleted or numbered list are
+  telegraphic. Steps of a procedure take the imperative; a list of questions keeps full sentences.
+- A gloss in apposition keeps one leading article and no other: "head, a literal, class or list of length n".
 - Keep a figure caption to a single line where possible.
-- Table cells, figure captions and rule side conditions omit articles ("Rebinds variable"). A gloss in
-  apposition keeps one leading article and no other: "head, a literal, class or list of length n".
-- Clarity takes precedence over telegraphic style: keep any word without which the text becomes ambiguous
-  or hard to read.
 
 ## Comments and checklists
 

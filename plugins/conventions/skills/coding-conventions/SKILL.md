@@ -20,11 +20,9 @@ spec-implementor.
 
 - Comment only what the code cannot show: no process commentary, source-file names, history or plans,
   except for a transitional definition (below).
-- One line where possible, telegraphic, without articles, as in a table cell ("Collapse duplicate
+- One line where possible, telegraphic as defined in the technical-authoring skill ("Collapse duplicate
   rows", not "This collapses the duplicate rows"); bare imperative for operations ("Collapse", not
   "Collapses"); contractions rather than formal verbs ("can't", not "cannot"). Same in test fixtures.
-  Clarity takes precedence over telegraphic style, as in the technical-authoring skill.
-- A comment of several sentences is prose and ends with a full stop; a telegraphic comment omits the full stop.
 - A comment speaks of the definition it sits on, as an operation or a noun phrase, never as a bare
   fact about the domain: "Bind a function at its type when its signature has no type parameters", not
   "A signature without type parameters is a type". A fact may follow as the reason ("..., since ...").
