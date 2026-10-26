@@ -88,7 +88,8 @@ hedging clauses ("Rebinds variable"). Text of several sentences is prose, with f
 precedence over telegraphic style: keep any word without which the text becomes ambiguous or hard to read.
 
 - Section headings, table cells, figure captions, rule side conditions, todo notes and the items of a
-  bulleted or numbered list are telegraphic. Steps of a procedure take the imperative; a list of questions keeps full sentences.
+  bulleted or numbered list are telegraphic. Steps of a procedure take the imperative; a list of questions
+  keeps full sentences.
 - A gloss in apposition keeps one leading article and no other: "head, a literal, class or list of length n".
 - Keep a figure caption to a single line where possible.
 
