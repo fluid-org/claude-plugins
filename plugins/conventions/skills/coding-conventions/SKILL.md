@@ -18,8 +18,8 @@ spec-implementor.
 
 ## Comments and docstrings
 
-- Comment only what the code cannot show: no process commentary, reasoning, source-file names,
-  history or plans, except for a transitional definition (below).
+- Comment only what the code cannot show: no process commentary, source-file names, history or plans,
+  except for a transitional definition (below).
 - One line where possible, telegraphic, without articles, as in a table cell ("Collapse duplicate
   rows", not "This collapses the duplicate rows"); bare imperative for operations ("Collapse", not
   "Collapses"); contractions rather than formal verbs ("can't", not "cannot"). Same in test fixtures.
