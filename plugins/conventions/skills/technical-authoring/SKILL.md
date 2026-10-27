@@ -132,3 +132,5 @@ precedence over telegraphic style: keep any word without which the text becomes 
 
 - Refer to a figure, lemma, definition or section by name and by its number in the current PDF, taken
   from the `.aux` of a draft build.
+- Refer to prose by its place in the PDF (section, page and opening words), never by its position in the
+  LaTeX source or by a macro.
