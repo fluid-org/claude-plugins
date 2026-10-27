@@ -20,6 +20,7 @@ technical-authoring skill. In addition:
 - Always work on a branch; never commit directly to the default branch, except for skill fixes, which go directly to `main`, and, in a repository with milestone branches, minor docs, process changes and trivial fixes, which go directly on the current milestone branch
 - While a branch is checked out, all work goes on it, related to its purpose or not; a new branch only when asked for
 - Always commit and always push, unless specifically instructed otherwise; push a new branch with `-u` to set up tracking
+- Every push starts CI, so push once a unit of work is complete, not after each commit
 - A small change made across several repositories (Claude settings, a `CLAUDE.md` line) goes on the branch active in the local checkout, or on `main` without a suitable checkout; no fresh branches or clones for it
 - Never leave uncommitted changes in the working tree, including changes not made in the session; commit them, or add generated files to `.gitignore` (and untrack any already committed)
 - Never add entries to `.git/info/exclude`
