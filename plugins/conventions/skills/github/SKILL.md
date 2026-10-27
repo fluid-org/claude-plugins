@@ -22,6 +22,7 @@ technical-authoring skill. In addition:
 - Always commit and always push, unless specifically instructed otherwise; push a new branch with `-u` to set up tracking
 - A small change made across several repositories (Claude settings, a `CLAUDE.md` line) goes on the branch active in the local checkout, or on `main` without a suitable checkout; no fresh branches or clones for it
 - Never leave uncommitted changes in the working tree, including changes not made in the session; commit them, or add generated files to `.gitignore` (and untrack any already committed)
+- Never add entries to `.git/info/exclude`
 - Fix a committed mistake with a new commit; never amend, and never `git stash`
 - Commits by Claude are authored by the bot account named in the user's configuration, with no attribution trailer (`Co-Authored-By`) or session link, whatever the harness suggests
 - After committing, do not report the commit message back or summarise the commit
