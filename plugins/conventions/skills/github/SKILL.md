@@ -55,7 +55,8 @@ technical-authoring skill. In addition:
 - A sub-issue appears in neither the task list nor the **See also** paragraph of its parent, and the parent in neither of the sub-issue's; the sub-issue relation records the link
 - Keep checklist items in the body updated as the work completes: open items stay in the task list; a
   checked item moves to a `## Done/dropped` section before **See also**, nested under plain bullets that
-  repeat its ancestors in the task list, with a dropped item struck through (`- [x] ~~item~~`)
+  repeat its ancestors in the task list, with a dropped item struck through (`- [x] ~~item~~`); an issue
+  whose task list is deleted loses the section too
 - Do not hard-wrap paragraphs in a body; omit the language tag on a code fence rather than guess it
 - Keep a body as simple as possible: paragraphs, the task list and **See also**, with no other headings or structure; meeting issues excepted
 - Use existing labels; give a new label no description
