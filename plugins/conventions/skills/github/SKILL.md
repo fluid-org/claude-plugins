@@ -53,8 +53,9 @@ technical-authoring skill. In addition:
 - Delete a duplicate issue rather than close it, unless a third party created it
 - A subtask of an issue is a line in the task list of its body, not a GitHub sub-issue, unless a sub-issue or new issue is asked for
 - A sub-issue appears in neither the task list nor the **See also** paragraph of its parent, and the parent in neither of the sub-issue's; the sub-issue relation records the link
-- Keep checklist items in the body updated as the work completes: open items first, then a line
-  `Done/dropped:` followed by the checked items, with a dropped item struck through (`- [x] ~~item~~`)
+- Keep checklist items in the body updated as the work completes: open items stay in the task list; a
+  checked item moves to a `## Done/dropped` section before **See also**, nested under plain bullets that
+  repeat its ancestors in the task list, with a dropped item struck through (`- [x] ~~item~~`)
 - Do not hard-wrap paragraphs in a body; omit the language tag on a code fence rather than guess it
 - Keep a body as simple as possible: paragraphs, the task list and **See also**, with no other headings or structure; meeting issues excepted
 - Use existing labels; give a new label no description
