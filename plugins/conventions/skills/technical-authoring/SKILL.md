@@ -25,6 +25,7 @@ Check every sentence of a draft against these rules, including a sentence rewrit
   statement"); give it a verb or a sentence of its own.
 - Spell out connectives: "records 1, because disjunction cannot cancel", not "records 1: disjunction
   cannot cancel".
+- Drop "that" after "so" where the sentence stays clear: "parsed first, so its errors take precedence".
 - No clefts ("X is what makes...", "this is where...", "is exactly..."): "Idempotent addition induces an
   order".
 - Subordinate a clause that acts on the result of the one before: "A match scrutinee synthesises a type,
