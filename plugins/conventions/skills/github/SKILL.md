@@ -62,6 +62,7 @@ technical-authoring skill. In addition:
   item remains, the heading goes and the checked items stand as the task list
 - Do not hard-wrap paragraphs in a body; omit the language tag on a code fence rather than guess it
 - Keep a body as simple as possible: paragraphs, the task list and **See also**, with no other headings or structure; meeting issues excepted
+- Keep a body minimal: a sentence or two of context and the task items, each naming the code or text it concerns; no account of how the problem was found or of the discussion behind it
 - Use existing labels; give a new label no description
 - An issue body describes the repository as it stands or will stand: no branch names, pull request numbers or interim states; refer to pending work by its issue
 - Link an external resource inline where the body mentions it, rather than in a **See also** paragraph
