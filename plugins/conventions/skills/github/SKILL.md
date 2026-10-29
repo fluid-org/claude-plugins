@@ -26,6 +26,9 @@ technical-authoring skill. In addition:
 - Never leave uncommitted changes in the working tree, including changes not made in the session; commit them, or add generated files to `.gitignore` (and untrack any already committed)
 - Never add entries to `.git/info/exclude`
 - Fix a committed mistake with a new commit; never amend, and never `git stash`
+- A mechanical change (a move, a mass deletion, an import of files from elsewhere, regenerated output) is a
+  commit of its own, first on the branch where possible, with "(mechanical)" ending its subject; the reviewer
+  then reads the other commits as a range in the web interface
 - Commits by Claude are authored by the bot account named in the user's configuration, with no attribution trailer (`Co-Authored-By`) or session link, whatever the harness suggests
 - After committing, do not report the commit message back or summarise the commit
 - After pushing, check the CI run for the branch; report it only if it fails, and diagnose the failure
