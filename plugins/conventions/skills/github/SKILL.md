@@ -14,6 +14,8 @@ technical-authoring skill. In addition:
 - Where a noun phrase would need a participle ("Maybe replaced by Optional"), use the imperative ("Replace Maybe by Optional")
 - No repository name in a title
 - Commit subject line short, imperative or noun phrase; detail in the body
+- Names of workflows, jobs and steps in GitHub Actions likewise: a noun phrase for a workflow or job, the
+  imperative for a step
 
 ## Commits
 
