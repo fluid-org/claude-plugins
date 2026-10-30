@@ -38,7 +38,10 @@ Check every sentence of a draft against these rules, including a sentence rewrit
   ("a variable pattern matches any shape").
 - General claims in the plural: "types never mention aliases", not "a type never mentions an alias". The
   singular stays for one particular thing and in lists.
-- Do not repeat an article across an enumeration: "the residual and remaining type".
+- Do not repeat an article or preposition across an enumeration: "the residual and remaining type",
+  "subtypes of bool or float".
+- No chains of possessives or of-phrases ("the typing specification's algorithm for calls"); restructure, or
+  drop a possessive the context implies ("the overloads", not "their overloads").
 - Nouns, not free relatives: "matched shapes", not "what it matches".
 - Bind every symbol in the sentence or in the judgement form just before it; otherwise name the thing
   ("the return type", not an unbound τ).
