@@ -38,6 +38,8 @@ Check every sentence of a draft against these rules, including a sentence rewrit
   ("a variable pattern matches any shape").
 - General claims in the plural: "types never mention aliases", not "a type never mentions an alias". The
   singular stays for one particular thing and in lists.
+- Repeat the verb in a coordinated clause rather than leave it implicit (gapping): "1 + 2 is an int and
+  1 + 2.0 is a float", not "1 + 2 is an int and 1 + 2.0 a float".
 - Do not repeat an article or preposition across an enumeration: "the residual and remaining type",
   "subtypes of bool or float".
 - No chains of possessives or of-phrases ("the typing specification's algorithm for calls"); restructure, or
