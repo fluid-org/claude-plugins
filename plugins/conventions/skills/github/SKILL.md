@@ -24,7 +24,8 @@ technical-authoring skill. In addition:
 - While a branch is checked out, all work goes on it, related to its purpose or not; a new branch only when asked for
 - Work in the existing local clone, switching its branch; a worktree only when two branches must be checked out at the same time
 - Always commit, unless specifically instructed otherwise; push only when asked, a new branch with `-u` to set up tracking
-- Every push starts CI, so push once a unit of work is complete, not after each commit
+- Every push starts CI, so push once a unit of work is complete, not after each commit; while the user reviews
+  an open pull request on GitHub, push each commit made in response
 - A small change made across several repositories (Claude settings, a `CLAUDE.md` line) goes on the branch active in the local checkout, or on `main` without a suitable checkout; no fresh branches or clones for it
 - Never leave uncommitted changes in the working tree, including changes not made in the session; commit them, or add generated files to `.gitignore` (and untrack any already committed)
 - Never add entries to `.git/info/exclude`
