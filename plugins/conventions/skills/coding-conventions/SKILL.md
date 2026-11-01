@@ -22,7 +22,7 @@ spec-implementor.
   except for a transitional definition (below).
 - One line where possible, telegraphic as defined in the technical-authoring skill ("Collapse duplicate
   rows", not "This collapses the duplicate rows"); bare imperative for operations ("Collapse", not
-  "Collapses"); contractions rather than formal verbs ("can't", not "cannot"). Same in test fixtures.
+  "Collapses"). Same in test fixtures.
 - A comment speaks of the definition it sits on, as an operation or a noun phrase, never as a bare
   fact about the domain: "Bind a function at its type when its signature has no type parameters", not
   "A signature without type parameters is a type". A fact may follow as the reason ("..., since ...").

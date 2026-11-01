@@ -72,8 +72,8 @@ Check every sentence of a draft against these rules, including a sentence rewrit
 - "Meet" and "join" are nouns, not verbs.
 - "Although", not subordinating "though"; "even though" and adverbial "though" are fine.
 - Report a trade-off factually; do not tell the reader what they "should use".
-- Contractions in READMEs and other documentation ("don't", not "do not"); full forms in papers and
-  specifications.
+- Contractions in code comments, test fixtures, READMEs and other documentation ("don't", not "do not");
+  full forms in papers and specifications.
 
 ## Terminology and notation
 
