@@ -22,7 +22,7 @@ technical-authoring skill. In addition:
 - Always work on a branch, for the current issue when there is one, since new work does not need an issue; never commit directly to the default branch, except for skill fixes, which go directly to `main`, and, in a repository with milestone branches, minor docs, process changes and trivial fixes, which go directly on the current milestone branch
 - Name the branch after the issue, number first (`247-syntax`), or after the work when there is no issue (`min-max`); when a feature branch for the issue collects the work of several subtasks, name the feature branch after the issue and each sub-branch off it after its subtask
 - While a branch is checked out, all work goes on it, related to its purpose or not; a new branch only when asked for
-- Work in the existing local clone, switching its branch; a worktree only when two branches must be checked out at the same time
+- Work in the existing local clone, switching its branch; a worktree only when asked for
 - Always commit, unless specifically instructed otherwise; push only when asked, a new branch with `-u` to set up tracking
 - Every push starts CI, so push once a unit of work is complete, not after each commit; while the user reviews
   an open pull request on GitHub, push each commit made in response
