@@ -87,5 +87,6 @@ Shared by the Agda and Isabelle skills.
 
 - Report the current state, not how it got there; leave out history, mistakes, failed attempts and
   problems already resolved, unless the user must act on them.
+- Do not report a failed build, command or commit that you can fix yourself; fix it first.
 - Refer to programs, commands and scripts by the names the repository gives them (their entries in
   `pyproject.toml`, say), never by descriptions such as "driver".
