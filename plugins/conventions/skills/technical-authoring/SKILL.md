@@ -53,6 +53,8 @@ Check every sentence of a draft against these rules, including a sentence rewrit
 - Do not open a subclause with a bare abstract noun ("...: agreement, except where..."); give it a
   subject and verb.
 - No nested colons or semicolons.
+- Two independent clauses on one subject, such as what a thing is and how it is used, join with a semicolon
+  rather than "and", at least in documentation.
 - No comma before a vocative that follows a short formula of greeting or thanks.
 - Never open a sentence with mathematics, or with a keyword, name or other identifier that starts with a
   lowercase letter (a rule or metafunction name, "mypy"): "The var rule applies...". Restructure rather than
