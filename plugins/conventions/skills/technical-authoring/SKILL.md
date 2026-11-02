@@ -33,9 +33,12 @@ Check every sentence of a draft against these rules, including a sentence rewrit
 - Lead a comparison with "following", not a trailing "as in X" or "as X do"; never end a sentence on
   "do" or "does" standing for a verb phrase.
 - No clause-final pro-forms ("leaves none", "the others", "so does"); repeat the noun or restructure.
-- Do not restate in a closing clause what the preceding text already says.
+- A pronoun only where a single noun could be its antecedent; where the subject of the main clause or a
+  nearer noun could also be meant, repeat the noun or reduce the clause: "rejects a program by exit
+  status 3 if ill-formed", not "if it is ill-formed".
 - Refer definitely to a set already introduced ("any of the cases"); a general claim keeps the bare noun
   ("a variable pattern matches any shape").
+- Do not restate in a closing clause what the preceding text already says.
 - General claims in the plural: "types never mention aliases", not "a type never mentions an alias". The
   singular stays for one particular thing and in lists.
 - Repeat the verb in a coordinated clause rather than leave it implicit (gapping): "1 + 2 is an int and
