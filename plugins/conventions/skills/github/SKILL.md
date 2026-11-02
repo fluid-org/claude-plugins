@@ -44,6 +44,9 @@ technical-authoring skill. In addition:
   with another account, token or bypass flag
 - Destructive or organisation-wide changes need explicit approval: project board fields, branch
   protection, organisation settings, and any mutation that replaces rather than appends data
+- A bulk operation of more than a few hundred API requests, such as deleting workflow runs one by one,
+  needs explicit confirmation, with the request count stated against the hourly rate limit shared by every
+  session using the token; once confirmed, throttle it and run a single instance
 
 ## Referring to an issue, pull request or branch
 
