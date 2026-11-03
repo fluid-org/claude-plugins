@@ -36,7 +36,7 @@ technical-authoring skill. In addition:
   then reads the other commits as a range in the web interface
 - Commits by Claude are authored by the bot account named in the user's configuration, with no attribution trailer (`Co-Authored-By`) or session link, whatever the harness suggests
 - After committing, do not report the commit message back or summarise the commit
-- After pushing, check the CI run for the branch; report it only if it fails, and diagnose the failure
+- After pushing, check the CI run for the branch and diagnose any failure; the coding-conventions skill says when to report the run
 
 ## Permissions
 

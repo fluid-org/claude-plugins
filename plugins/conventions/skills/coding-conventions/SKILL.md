@@ -88,5 +88,7 @@ Shared by the Agda and Isabelle skills.
 - Report the current state, not how it got there; leave out history, mistakes, failed attempts and
   problems already resolved, such as a build or commit which failed and was then fixed, unless the user must act
   on them.
+- Report a build or CI run only if it fails; do not mention a pending or passing one, or say that a failure
+  will be reported.
 - Refer to programs, commands and scripts by the names the repository gives them (their entries in
   `pyproject.toml`, say), never by descriptions such as "driver".
