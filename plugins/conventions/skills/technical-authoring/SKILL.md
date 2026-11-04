@@ -40,6 +40,8 @@ Check every sentence of a draft against these rules, including a sentence rewrit
 - Refer definitely to a set already introduced ("any of the cases"); a general claim keeps the bare noun
   ("a variable pattern matches any shape").
 - Do not restate in a closing clause what the preceding text already says.
+- Avoid appending a related, but on its own insufficient, fact as though it were a reason; a reason is a
+  fact from which a claim follows.
 - General claims in the plural: "types never mention aliases", not "a type never mentions an alias". The
   singular stays for one particular thing and in lists.
 - Repeat the verb in a coordinated clause rather than leave it implicit (gapping): "1 + 2 is an int and
