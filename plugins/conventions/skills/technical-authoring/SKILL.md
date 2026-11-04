@@ -11,7 +11,7 @@ Direct, factual, conventional prose: state the thing and stop.
 
 Check every sentence of a draft against these rules, including a sentence rewritten only for clarity.
 
-- **Negation on the verb**, never before a noun: "does not need a return", not "needs no return"; "is not
+- **Negation on the verb**, not before a noun: "does not need a return", not "needs no return"; "is not
   bound in either branch", not "is bound in neither branch". Prefer an affirmative that says the same
   thing: "admits values of every length".
 - **No object relative clauses**: "the values no case matches", "the type that the expression
@@ -31,8 +31,8 @@ Check every sentence of a draft against these rules, including a sentence rewrit
   order".
 - Subordinate a clause that acts on the result of the one before: "A match scrutinee synthesises a type,
   against which each case is checked", not "..., and each case checks against it".
-- Never use "following" for agreement or imitation ("following mypy", "following the call-union rule").
-  Never end a sentence on "do" or "does" standing for a verb phrase ("as mypy does").
+- Avoid "following" for agreement or imitation ("following mypy", "following the call-union rule").
+  Avoid ending a sentence on "do" or "does" standing for a verb phrase ("as mypy does").
 - No clause-final pro-forms ("leaves none", "the others", "so does"); repeat the noun or restructure.
 - A pronoun only where a single noun could be its antecedent; where the subject of the main clause or a
   nearer noun could also be meant, repeat the noun or reduce the clause: "rejects a program by exit
@@ -57,7 +57,7 @@ Check every sentence of a draft against these rules, including a sentence rewrit
 - Two independent clauses on one subject, such as what a thing is and how it is used, join with a semicolon
   rather than "and", at least in documentation.
 - No comma before a vocative that follows a short formula of greeting or thanks.
-- Never open a sentence with mathematics, or with a keyword, name or other identifier that starts with a
+- Avoid opening a sentence with mathematics, or with a keyword, name or other identifier that starts with a
   lowercase letter (a rule or metafunction name, "mypy"): "The var rule applies...". Restructure rather than
   prefix a lowercase name with its kind: "For mypy, the code is unreachable", "is rejected by mypy", not "The
   type checker mypy rejects".
@@ -74,7 +74,7 @@ Check every sentence of a draft against these rules, including a sentence rewrit
 - Name the referent, not "the algebra" or "the structure".
 - No "own" as a distinguishing qualifier ("the node's own positions"); state the distinction.
 - Standard terms only ("translation", not "shift"); check that a term is standard before relying on it,
-  and never coin one, in the text or in conversation.
+  and avoid coining one, in the text or in conversation.
 - "Meet" and "join" are nouns, not verbs.
 - "Although", not subordinating "though"; "even though" and adverbial "though" are fine.
 - Report a trade-off factually; do not tell the reader what they "should use".
@@ -86,14 +86,14 @@ Check every sentence of a draft against these rules, including a sentence rewrit
 - Introduce a term where its concept first appears, before relying on it. Italicise on first definition
   only.
 - Qualify a noun used for more than one kind of thing: a context entry or a class entry, not "entry".
-- Never shorten a compound term to its head noun: "hash table", never "table".
+- Avoid shortening a compound term to its head noun: "hash table", not "table".
 - Keep variable sorts consistent within a section.
 - Use every metavariable of a sort before priming: σ and τ, not τ and τ′. A prime marks a third of the
   sort, or the same thing at a later stage.
 - One notation per object, following earlier sections.
 - Write a structure out as a tuple at first use if its components matter.
 - Prefer prose quantification ("changes by at most δ") over symbols not used again.
-- In double-blind submissions: "earlier work on X", never "our earlier work".
+- In double-blind submissions: "earlier work on X", not "our earlier work".
 
 ## Telegraphic text
 
@@ -112,7 +112,7 @@ precedence over telegraphic style: keep any word without which the text becomes 
 - Check a date or time against the clock or the record before stating it.
 - Code comments: see the coding-conventions skill.
 - Checklists and issues: state the task directly ("Move X here; add Y").
-- Meta-commentary about the document (moves, supersessions) belongs in the issue tracker, never in the
+- Meta-commentary about the document (moves, supersessions) belongs in the issue tracker, not in the
   text or in change markup.
 - State the current design only; delete superseded claims rather than contrasting or annotating them.
 - When reporting remaining items, give only those.
@@ -145,5 +145,5 @@ precedence over telegraphic style: keep any word without which the text becomes 
 
 - Refer to a figure, lemma, definition or section by name and by its number in the current PDF, taken
   from the `.aux` of a draft build.
-- Refer to prose by its place in the PDF (section, page and opening words), never by its position in the
+- Refer to prose by its place in the PDF (section, page and opening words), not by its position in the
   LaTeX source or by a macro.
