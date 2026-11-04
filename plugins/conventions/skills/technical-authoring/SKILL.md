@@ -31,8 +31,8 @@ Check every sentence of a draft against these rules, including a sentence rewrit
   order".
 - Subordinate a clause that acts on the result of the one before: "A match scrutinee synthesises a type,
   against which each case is checked", not "..., and each case checks against it".
-- Lead a comparison with "following", not a trailing "as in X" or "as X do"; never end a sentence on
-  "do" or "does" standing for a verb phrase.
+- Never use "following" for agreement or imitation ("following mypy", "following the call-union rule").
+  Never end a sentence on "do" or "does" standing for a verb phrase ("as mypy does").
 - No clause-final pro-forms ("leaves none", "the others", "so does"); repeat the noun or restructure.
 - A pronoun only where a single noun could be its antecedent; where the subject of the main clause or a
   nearer noun could also be meant, repeat the noun or reduce the clause: "rejects a program by exit
