@@ -44,7 +44,7 @@ Check every sentence of a draft against these rules, including a sentence rewrit
   fact from which a claim follows.
 - Avoid presenting an example as a consequence ("..., so a program may bind a variable named type").
 - General claims in the plural: "types never mention aliases", not "a type never mentions an alias". The
-  singular stays for one particular thing and in lists.
+  singular stays for one particular thing, in lists, and where it reads more naturally, as in an example.
 - Repeat the verb in a coordinated clause rather than leave it implicit (gapping): "1 + 2 is an int and
   1 + 2.0 is a float", not "1 + 2 is an int and 1 + 2.0 a float".
 - Do not repeat an article or preposition across an enumeration: "the residual and remaining type",
