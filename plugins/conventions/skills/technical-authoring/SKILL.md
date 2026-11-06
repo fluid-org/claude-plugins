@@ -49,8 +49,9 @@ Check every sentence of a draft against these rules, including a sentence rewrit
   1 + 2.0 is a float", not "1 + 2 is an int and 1 + 2.0 a float".
 - Do not repeat an article or preposition across an enumeration: "the residual and remaining type",
   "subtypes of bool or float".
-- No chains of possessives or of-phrases ("the typing specification's algorithm for calls"); restructure, or
-  drop a possessive the context implies ("the overloads", not "their overloads").
+- Few possessives, especially pronouns, and no chains of possessives or of-phrases ("the typing specification's
+  algorithm for calls"); restructure, or drop a possessive the context implies ("the overloads", not "their
+  overloads").
 - Nouns, not free relatives: "matched shapes", not "what it matches".
 - Bind every symbol in the sentence or in the judgement form just before it; otherwise name the thing
   ("the return type", not an unbound τ).
