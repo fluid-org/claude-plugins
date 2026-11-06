@@ -9,8 +9,8 @@ Load the coding-conventions skill first; it holds the rules shared with other im
 
 - Line width in rendered characters: a symbol escape counts as one, a control escape such as a
   subscript as none. `line-width.py` in this directory lists overruns.
-- Names come from the specification's PDF, never its LaTeX source: a macro name or file name is not a
-  term of the specification.
+- A name presented to the user, as in a diagnostic, comes from the specification's PDF, never its LaTeX
+  source: a macro name, label or file name is not a term of the specification.
 - While iterating, as in a review, check each change by building the session alone and commit it;
   run the code export, its tests and the corpus once the iteration is complete. A change only to comments
   or documentation needs no build.
