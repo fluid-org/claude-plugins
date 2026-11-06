@@ -18,7 +18,7 @@ spec-implementor.
 
 ## Comments and docstrings
 
-- Comment only what the code cannot show: no process commentary, source-file names, history or plans,
+- Comment or document only what the code cannot show: no process commentary, source-file names, history or plans,
   except for a transitional definition (below).
 - One line where possible, telegraphic as defined in the technical-authoring skill ("Collapse duplicate
   rows", not "This collapses the duplicate rows"); bare imperative for operations ("Collapse", not
