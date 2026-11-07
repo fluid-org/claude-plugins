@@ -151,3 +151,4 @@ precedence over telegraphic style: keep any word without which the text becomes 
   from the `.aux` of a draft build.
 - Refer to prose by its place in the PDF (section, page and opening words), not by its position in the
   LaTeX source or by a macro.
+- No quote block around a draft message for the user to send (Slack, email); plain text instead.
