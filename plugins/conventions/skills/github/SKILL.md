@@ -13,7 +13,7 @@ technical-authoring skill. In addition:
 - Titles and task-list items are noun phrases naming the thing rather than the action ("Syntax of types", not "Define the syntax of types")
 - Where a noun phrase would need a participle ("Maybe replaced by Optional"), use the imperative ("Replace Maybe by Optional")
 - No repository name in a title
-- Commit subject line short, imperative or noun phrase; detail in the body
+- Commit message a subject line only, succinctly describing the change as an imperative or noun phrase; no body
 - Names of workflows, jobs and steps in GitHub Actions likewise: a noun phrase for a workflow or job, the
   imperative for a step
 
