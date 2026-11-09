@@ -83,7 +83,7 @@ technical-authoring skill. In addition:
   - #50
   ```
 
-- In a bullet list, link another issue as bare `#N`, which GitHub renders with its title
+- In a bullet list, link another issue as bare `#N`, which GitHub renders with its title; within the text of a task item, link it with descriptive text (`[first three models](URL)`) instead, since the rendered title would interrupt the item
 
 ## Escalation
 
