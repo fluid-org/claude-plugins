@@ -102,8 +102,9 @@ Check every sentence of a draft against these rules, including a sentence rewrit
 
 ## Telegraphic text
 
-Telegraphic text omits articles and a final full stop, and makes one point per item, without framing or
-hedging clauses ("Rebinds variable"). Text of several sentences is prose, with full stops. Clarity takes
+Telegraphic text omits articles and a final full stop, and makes one main point per item, without framing or
+hedging clauses ("Rebinds variable"); a parenthesis or a clause after a semicolon may clarify or qualify the
+main point. Text of several sentences is prose, with full stops. Clarity takes
 precedence over telegraphic style: keep any word without which the text becomes ambiguous or hard to read.
 
 - Section headings, table cells, figure captions, rule side conditions, todo notes and the items of a
