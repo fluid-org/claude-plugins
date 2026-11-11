@@ -64,7 +64,7 @@ technical-authoring skill. In addition:
 - Delete a duplicate issue rather than close it, unless a third party created it
 - A subtask of an issue is a line in the task list of its body, not a GitHub sub-issue, unless a sub-issue or new issue is asked for
 - A sub-issue appears in neither the task list nor the **See also** paragraph of its parent, and the parent in neither of the sub-issue's; the sub-issue relation records the link
-- Before editing a body, re-read it from GitHub and apply the change to that text; a copy from earlier in the session may be stale, since the user edits bodies too
+- Re-read a body from GitHub before editing it; never edit from a copy
 - Keep checklist items in the body updated as the work completes: open items stay in the task list; a
   checked item moves to a `## Done/dropped` section before **See also**, nested under plain bullets that
   repeat its ancestors in the task list, with a dropped item struck through (`- [x] ~~item~~`); once no open
