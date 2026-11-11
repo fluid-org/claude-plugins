@@ -18,3 +18,4 @@ and comments apply to skills and are not repeated here.
 - Identified pitfalls don't become skills; by default add to the skill only on request.
 - Before adding a rule, check the skill and the skills it loads for one that already covers it.
 - Avoid positive overspecification; concentrate on antipatterns.
+- State the rule, without its reason or the failure it prevents.
