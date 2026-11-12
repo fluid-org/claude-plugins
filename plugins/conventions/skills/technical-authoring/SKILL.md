@@ -11,66 +11,50 @@ Direct, factual, conventional prose: state the thing and stop.
 
 Check every sentence of a draft against these rules, including a sentence rewritten only for clarity.
 
-- **Negation on the verb**, not before a noun: "does not need a return", not "needs no return"; "is not
-  bound in either branch", not "is bound in neither branch". Prefer an affirmative that says the same
-  thing: "admits values of every length".
-- **No object relative clauses**: "the values no case matches", "the type that the expression
-  synthesises", "the values matched by no case". Make the head noun the subject of its modifier: a term
-  where one exists ("the residual"); otherwise a passive participle with a plain agent ("the type
-  synthesised by the expression"); otherwise a "which" clause with the negation on the verb ("the values
-  which are not matched by any of the cases"). Possessive relatives likewise: "a function with
-  overlapping cases", not "a function whose cases overlap".
-- No comma pivot from assertion to contrast: "It's yours, not a leftover."
+- No negation before a noun ("needs no return", "is bound in neither branch").
+- No object relative clauses ("the values no case matches", "the type that the expression synthesises", "the
+  values matched by no case"); no possessive relatives ("a function whose cases overlap").
+- No comma pivot from assertion to contrast ("It's yours, not a leftover").
 - No verbless clause after a comma qualifying the preceding noun ("the entries, empty for a type
-  statement"); give it a verb or a separate sentence.
-- Spell out connectives: "records 1, because disjunction cannot cancel", not "records 1: disjunction
-  cannot cancel".
-- Drop "that" after "so" unless readability or emphasis requires it: "parsed first, so its errors take
-  precedence".
-- No clefts ("X is what makes...", "this is where...", "is exactly..."): "Idempotent addition induces an
-  order".
-- Subordinate a clause that acts on the result of the one before: "A match scrutinee synthesises a type,
-  against which each case is checked", not "..., and each case checks against it".
-- Avoid "following" for agreement or imitation ("following mypy", "following the call-union rule").
-  Avoid ending a sentence on "do" or "does" standing for a verb phrase ("as mypy does").
-- No clause-final pro-forms ("leaves none", "the others", "so does"); repeat the noun or restructure.
-- A pronoun only where a single noun could be its antecedent; where the subject of the main clause or a
-  nearer noun could also be meant, repeat the noun or reduce the clause: "rejects a program by exit
-  status 3 if ill-formed", not "if it is ill-formed".
-- Refer definitely to a set already introduced ("any of the cases"); a general claim keeps the bare noun
-  ("a variable pattern matches any shape").
-- Do not restate in a closing clause what the preceding text already says.
-- Avoid appending a related, but by itself insufficient, fact as though it were a reason; a reason is a
-  fact from which a claim follows.
-- Avoid presenting an example as a consequence ("..., so a program may bind a variable named type").
-- General claims in the plural: "types never mention aliases", not "a type never mentions an alias". The
-  singular stays for one particular thing, in lists, and where it reads more naturally, as in an example.
-- Repeat the verb in a coordinated clause rather than leave it implicit (gapping): "1 + 2 is an int and
-  1 + 2.0 is a float", not "1 + 2 is an int and 1 + 2.0 a float".
-- Do not repeat an article or preposition across an enumeration: "the residual and remaining type",
-  "subtypes of bool or float".
-- Avoid over-reliance on possessives, especially pronouns, and chains of possessives or of-phrases ("the
-  typing specification's algorithm for calls"); restructure, or drop a possessive the context implies ("the
-  overloads", not "their overloads").
-- Nouns, not free relatives: "matched shapes", not "what it matches".
-- Bind every symbol in the sentence or in the judgement form just before it; otherwise name the thing
-  ("the return type", not an unbound τ).
-- Do not open a subclause with a bare abstract noun ("...: agreement, except where..."); give it a
-  subject and verb.
+  statement").
+- No colon standing for a connective ("records 1: disjunction cannot cancel").
+- No "that" after a consequential "so" unless readability or emphasis requires it ("parsed first, so that
+  its errors take precedence").
+- No clefts ("X is what makes...", "this is where...", "is exactly...").
+- No coordinated clause acting on the result of the one before ("A match scrutinee synthesises a type, and
+  each case checks against it").
+- No "following" for agreement or imitation ("following mypy", "following the call-union rule"). No sentence
+  ending on "do" or "does" standing for a verb phrase ("as mypy does").
+- No clause-final pro-forms ("leaves none", "the others", "so does").
+- No pronoun where the subject of the main clause or a nearer noun could also be its antecedent ("rejects a
+  program by exit status 3 if it is ill-formed").
+- No bare noun for a set already introduced ("no case" for "none of the cases"); no definite reference in a
+  general claim ("the variable pattern matches any shape").
+- No closing clause restating what the preceding text already says.
+- No related, but by itself insufficient, fact appended as though it were a reason; a reason is a fact from
+  which a claim follows.
+- No example presented as a consequence ("..., so a program may bind a variable named type").
+- No singular for a general claim ("a type never mentions an alias"), except for one particular thing, in
+  lists, and where the singular reads more naturally, as in an example.
+- No gapping ("1 + 2 is an int and 1 + 2.0 a float").
+- No article or preposition repeated across an enumeration ("the residual and the remaining type", "subtypes
+  of bool or of float").
+- No chains of possessives or of-phrases ("the typing specification's algorithm for calls"); no possessive the
+  context implies ("their overloads").
+- No free relatives ("what it matches").
+- No symbol unbound by the sentence or by the judgement form just before it (an unbound τ for the return
+  type).
+- No subclause opening with a bare abstract noun ("...: agreement, except where...").
 - No nested colons or semicolons.
-- Two independent clauses on one subject, such as what a thing is and how it is used, join with a semicolon
-  rather than "and", at least in documentation.
-- Do not join two independent clauses with ", and"; subordinate the second ("..., with scientific computing
-  among the fields driving its use") or make it a sentence.
-- Avoid a long sentence built by chaining clauses with semicolons or "and"; split it into sentences.
+- No "and" joining two independent clauses, whether on one subject (what a thing is and how it is used) or
+  on two ("..., and scientific computing is among the fields driving its use").
+- No long sentence built by chaining clauses with semicolons or "and".
 - No comma before a vocative that follows a short formula of greeting or thanks.
-- Avoid opening a sentence with mathematics, or with a keyword, name or other identifier that starts with a
-  lowercase letter (a rule or metafunction name, "mypy"): "The var rule applies...". Restructure rather than
-  prefix a lowercase name with its kind: "For mypy, the code is unreachable", "is rejected by mypy", not "The
-  type checker mypy rejects".
-- Conditions take "if" or "when"; reserve "where" for positions and for binding a symbol ("where n is the
-  arity").
-- Goal before construction, reason before consequence.
+- No sentence opening with mathematics, or with a keyword, name or other identifier that starts with a
+  lowercase letter (a rule or metafunction name, "mypy"); no kind prefixed to a lowercase name to avoid it
+  ("The type checker mypy rejects").
+- No "where" for a condition; "where" binds a symbol ("where n is the arity") or gives a position.
+- No construction before its goal; no consequence before its reason.
 
 ## Word choice
 
@@ -78,32 +62,29 @@ Check every sentence of a draft against these rules, including a sentence rewrit
   "obvious", "simply".
 - No metaphor or private jargon: "lands", "spine", "swept across", "destination"; "story" sparingly.
   "Rung" and "ladder" are banned everywhere, including discussion.
-- Name the referent, not "the algebra" or "the structure".
+- No stand-in for the referent ("the algebra", "the structure").
 - No "own" after a possessive, whether a possessive determiner or a genitive ("the node's own positions", "its
-  own block", "a commit of its own", "on its own"): the intensifier implies a contrast without stating it. Drop
-  it, or state the contrast ("a mechanisation pin in the submission, separate from the specification's");
-  "alone" or "separate" replaces the idioms.
-- Standard terms only ("translation", not "shift"); check that a term is standard before relying on it,
-  and avoid coining one, in the text or in conversation.
-- "Meet" and "join" are nouns, not verbs.
-- "Although", not subordinating "though"; "even though" and adverbial "though" are fine.
-- Report a trade-off factually; do not tell the reader what they "should use".
-- Contractions in code comments, test fixtures, READMEs and other documentation ("don't", not "do not");
-  full forms in papers and specifications.
+  own block", "a commit of its own", "on its own").
+- No coined or non-standard term ("shift" for translation), in the text or in conversation; check that a term
+  is standard before relying on it.
+- No "meet" or "join" as a verb.
+- No subordinating "though"; "even though" and adverbial "though" are fine.
+- No telling the reader what they "should use"; a trade-off is reported factually.
+- No full forms in code comments, test fixtures, READMEs and other documentation ("do not" for "don't"); no
+  contractions in papers and specifications.
 
 ## Terminology and notation
 
-- Introduce a term where its concept first appears, before relying on it. Italicise on first definition
-  only.
-- Qualify a noun used for more than one kind of thing: a context entry or a class entry, not "entry".
-- Avoid shortening a compound term to its head noun: "hash table", not "table".
-- Keep variable sorts consistent within a section.
-- Use every metavariable of a sort before priming: σ and τ, not τ and τ′. A prime marks a third of the
+- No reliance on a term before its concept is introduced; no italics after the first definition.
+- No unqualified noun used for more than one kind of thing ("entry" for a context entry or a class entry).
+- No compound term shortened to its head noun ("table" for "hash table").
+- No change of variable sort within a section.
+- No primed metavariable while one of the sort is unused (τ and τ′ for σ and τ); a prime marks a third of the
   sort, or the same thing at a later stage.
-- One notation per object, following earlier sections.
-- Write a structure out as a tuple at first use if its components matter.
-- Prefer prose quantification ("changes by at most δ") over symbols not used again.
-- In double-blind submissions: "earlier work on X", not "our earlier work".
+- No second notation for an object already given one in an earlier section.
+- No structure whose components matter introduced without its tuple form.
+- No symbol introduced for a single quantification ("changes by at most δ" in prose instead).
+- No "our earlier work" in a double-blind submission.
 
 ## Telegraphic text
 
@@ -116,24 +97,25 @@ precedence over telegraphic style: keep any word without which the text becomes 
   bulleted or numbered list are telegraphic. Steps of a procedure take the imperative; a list of questions
   keeps full sentences.
 - A gloss in apposition keeps one leading article and no other: "head, a literal, class or list of length n".
-- Keep a figure caption to a single line where possible.
+- No figure caption of more than one line where a single line is possible.
 
 ## Comments and checklists
 
 - Check a date or time against the clock or the record before stating it.
 - Code comments: see the coding-conventions skill.
-- Checklists and issues: state the task directly ("Move X here; add Y").
-- Meta-commentary about the document (moves, supersessions) belongs in the issue tracker, not in the
-  text or in change markup.
-- State the current design only; delete superseded claims rather than contrasting or annotating them.
-- When reporting remaining items, give only those.
+- No indirect statement of a task in a checklist or issue ("we could perhaps move X").
+- No meta-commentary about the document (moves, supersessions) in the text or in change markup; it belongs
+  in the issue tracker.
+- No superseded claim kept, contrasted or annotated; the text states the current design only.
+- No reporting of completed items alongside remaining ones.
 
 ## Structure
 
 - After adding or changing text, reread the surrounding paragraph to check that it still flows.
-- Frame a contrast around its one dimension, leaving out machinery irrelevant to it.
-- Parallel headings for sibling sections; state shared setup once, in a common parent.
-- Mark conjectures as conjectures.
+- No machinery irrelevant to the one dimension of a contrast.
+- No non-parallel headings for sibling sections; no shared setup repeated across siblings instead of stated
+  once in a common parent.
+- No conjecture stated as a result.
 
 ## LaTeX
 
