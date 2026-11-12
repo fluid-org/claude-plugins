@@ -73,7 +73,7 @@ technical-authoring skill. In addition:
 - Keep a body as simple as possible: paragraphs, the task list, tables where they serve and **See also**, with no other headings or structure, except `###` subheadings dividing a task list that covers several kinds of work, and `####` subheadings dividing a `###` section in the same way; meeting issues excepted
 - Keep a body minimal: a line or two of context and the task items, each naming the code or text it concerns; no account of how the problem was found or of the course of the discussion behind it
 - Use existing labels; give a new label no description
-- An issue body describes the repository as it stands or will stand: no branch names, pull request numbers or interim states; refer to pending work by its issue
+- An issue body describes the repository as it stands or will stand: no branch names, pull request numbers or interim states of the code; refer to pending work by its issue
 - Link an external resource inline where the body mentions it, rather than in a **See also** paragraph
 - When an issue references other issues, end with a **See also** paragraph:
 
