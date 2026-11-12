@@ -144,6 +144,9 @@ precedence over telegraphic style: keep any word without which the text becomes 
   alike: `\added`, `\deleted` and `\replaced{new}{old}` inline, the capitalised variants for a margin change
   bar, and `AddedBlock` and `DeletedBlock` for whole paragraphs or display material. Rewrite a section body
   as a `DeletedBlock` of the old text followed by an `AddedBlock` of the new.
+- Mark up at the grain of the change: a changed phrase within a sentence, a rewritten sentence, a new
+  sentence. Keep unchanged text outside the markup; do not replace several sentences as one run when only
+  some of them change.
 - End the old text inside `\replaced` with a space, so that the deleted and added runs do not abut.
 - Markup is accepted later, in a commit titled "Change markup accepted"; the final build mode renders the
   clean version.
