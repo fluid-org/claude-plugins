@@ -22,7 +22,7 @@ Check every sentence of a draft against these rules, including a sentence rewrit
   overlapping cases", not "a function whose cases overlap".
 - No comma pivot from assertion to contrast: "It's yours, not a leftover."
 - No verbless clause after a comma qualifying the preceding noun ("the entries, empty for a type
-  statement"); give it a verb or a sentence of its own.
+  statement"); give it a verb or a separate sentence.
 - Spell out connectives: "records 1, because disjunction cannot cancel", not "records 1: disjunction
   cannot cancel".
 - Drop "that" after "so" unless readability or emphasis requires it: "parsed first, so its errors take
@@ -40,7 +40,7 @@ Check every sentence of a draft against these rules, including a sentence rewrit
 - Refer definitely to a set already introduced ("any of the cases"); a general claim keeps the bare noun
   ("a variable pattern matches any shape").
 - Do not restate in a closing clause what the preceding text already says.
-- Avoid appending a related, but on its own insufficient, fact as though it were a reason; a reason is a
+- Avoid appending a related, but by itself insufficient, fact as though it were a reason; a reason is a
   fact from which a claim follows.
 - Avoid presenting an example as a consequence ("..., so a program may bind a variable named type").
 - General claims in the plural: "types never mention aliases", not "a type never mentions an alias". The
@@ -77,7 +77,10 @@ Check every sentence of a draft against these rules, including a sentence rewrit
 - No metaphor or private jargon: "lands", "spine", "swept across", "destination"; "story" sparingly.
   "Rung" and "ladder" are banned everywhere, including discussion.
 - Name the referent, not "the algebra" or "the structure".
-- No "own" as a distinguishing qualifier ("the node's own positions"); state the distinction.
+- No "own" after a possessive, whether a possessive determiner or a genitive ("the node's own positions", "its
+  own block", "a commit of its own", "on its own"): the intensifier implies a contrast without stating it. Drop
+  it, or state the contrast ("a mechanisation pin in the submission, separate from the specification's");
+  "alone" or "separate" replaces the idioms.
 - Standard terms only ("translation", not "shift"); check that a term is standard before relying on it,
   and avoid coining one, in the text or in conversation.
 - "Meet" and "join" are nouns, not verbs.
@@ -144,7 +147,7 @@ precedence over telegraphic style: keep any word without which the text becomes 
 - End the old text inside `\replaced` with a space, so that the deleted and added runs do not abut.
 - Markup is accepted later, in a commit titled "Change markup accepted"; the final build mode renders the
   clean version.
-- Align the side conditions of a definition alike, all in the condition column or all on their own
+- Align the side conditions of a definition alike, all in the condition column or all on a separate
   line, with none left overfull. A bare "otherwise" follows its equation after a `\quad`, in parentheses.
 
 ## References in conversation

@@ -75,8 +75,8 @@ producing particular output when run.
 - **Spec prose**: every worked example, counterexample and justifying sentence
   describes a program; each should exist as a test.
 - An implementation other than the reference checker runs the spec's corpus
-  whole through a differential harness rather than copying it into its own
-  suite, which holds only programs without a corpus counterpart.
+  whole through a differential harness rather than copying it into the suite of the
+  implementation, which holds only programs without a corpus counterpart.
 - Use programs large enough that recursive rules recurse; a one-level
   example can pass for the wrong reason.
 - Audit the suite by mutation: weaken the implementation deliberately and

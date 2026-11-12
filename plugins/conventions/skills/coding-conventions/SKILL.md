@@ -8,7 +8,7 @@ description: Shared conventions for code in any language (comments, docstrings, 
 ## Recording guidance
 
 - Never save guidance to Claude's memory, or to notes or any other file outside a repository. Record a
-  lasting rule in the skill it belongs to, in this plugin or in a project's own skill, and commit it.
+  lasting rule in the skill it belongs to, in this plugin or in a skill of the project, and commit it.
   Project state belongs in the issue tracker.
 - Writing a skill: see the skill-authoring skill.
 
