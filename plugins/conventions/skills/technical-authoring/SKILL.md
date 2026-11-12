@@ -60,6 +60,8 @@ Check every sentence of a draft against these rules, including a sentence rewrit
 - No nested colons or semicolons.
 - Two independent clauses on one subject, such as what a thing is and how it is used, join with a semicolon
   rather than "and", at least in documentation.
+- Do not join two independent clauses with ", and"; subordinate the second ("..., with scientific computing
+  among the fields driving its use") or make it a sentence.
 - Avoid a long sentence built by chaining clauses with semicolons or "and"; split it into sentences.
 - No comma before a vocative that follows a short formula of greeting or thanks.
 - Avoid opening a sentence with mathematics, or with a keyword, name or other identifier that starts with a
