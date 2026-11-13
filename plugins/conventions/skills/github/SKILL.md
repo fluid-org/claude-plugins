@@ -19,7 +19,7 @@ technical-authoring skill. In addition:
 
 ## Commits
 
-- Always work on a branch, for the current issue when there is one, since new work does not need an issue; never commit directly to the default branch, except for skill fixes, which go directly to `main`; changes to build, CI and reporting tooling (Makefiles, workflows, scripts, status pages), which go directly on the default branch once checked locally, without a pull request; and, in a repository with milestone branches, minor docs, process changes and trivial fixes, which go directly on the current milestone branch
+- Always work on a branch, for the current issue when there is one, since new work does not need an issue; never commit directly to the default branch, except for skill fixes, which go directly to `main`; administrative changes (version and dependency pins, submodule pointers, and build, CI and reporting tooling such as Makefiles, workflows, scripts and status pages), which go directly on the default branch once checked locally, without a pull request, since pull requests are for content; and, in a repository with milestone branches, minor docs, process changes and trivial fixes, which go directly on the current milestone branch
 - Name the branch after the issue, number first (`247-syntax`), or after the work when there is no issue (`min-max`); when a feature branch for the issue collects the work of several subtasks, name the feature branch after the issue and each sub-branch off it after its subtask
 - While a branch is checked out, all work goes on it, related to its purpose or not; a new branch only when asked for
 - Work in the existing local clone, on the branch checked out there; a worktree only when asked for, or when another session is modifying
