@@ -144,3 +144,5 @@ precedence over telegraphic style: keep any word without which the text becomes 
 - Refer to prose by its place in the PDF (section, page and opening words), not by its position in the
   LaTeX source or by a macro.
 - No quote block around a draft message for the user to send (Slack, email); plain text instead.
+- When the user is reviewing a document and objects to a passage, the reply is the replacement text alone: no
+  diagnosis of the passage, no account of the rules it breaks or of its intended flow.
