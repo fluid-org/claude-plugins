@@ -1,11 +1,12 @@
 ---
 name: technical-authoring
-description: House style for drafting and editing technical prose (papers, specifications, notes, issues, code comments) with Roly. Plain, factual, conventional English; no rhetorical compression or editorial colour. Use whenever drafting or revising paper or specification text, and when asked to "lose the ticks".
+description: House style for technical writing with Roly. Plain, factual, conventional English; no rhetorical compression or editorial colour. Use whenever drafting or revising text of any kind (papers, specifications, notes, issue bodies, code comments), and when asked to "lose the ticks".
 ---
 
 # Technical authoring style
 
-Direct, factual, conventional prose: state the thing and stop.
+Direct, factual, conventional prose: state the thing and stop. The rules apply to every text, whether paper,
+specification, notes or issue body, and whether prose or telegraphic.
 
 ## Sentence construction
 

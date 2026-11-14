@@ -56,7 +56,6 @@ technical-authoring skill. In addition:
 
 ## Issues
 
-- Prose in bodies and comments follows the technical-authoring skill
 - Before starting work on an issue, assign it to the user and to the account you run as (`gh api user --jq .login`)
 - Check with the user before creating an issue, unless explicitly instructed to create one
 - A new issue goes on the project board with a Status (`Proposed` for new work) and, in fluid, an Aspect; set Type, labels and milestone when appropriate
