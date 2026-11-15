@@ -53,6 +53,8 @@ spec-implementor.
 - No defensive coding: assert a case that shouldn't arise rather than returning a safe default.
   User-facing failures go through the monad, with a message naming the construct and the offending
   element, without pronouns ("Class C extends int, which is not a class").
+- No user-facing text (help text, messages, labels) breaking the technical-authoring skill or running beyond
+  telegraphic form ("Prints the version of the tool, to include in bug reports").
 - Inline a local used once; bind an expression used twice once.
 - In Haskell and PureScript, a local that depends only on the arguments goes in `where`, not `let`.
 - Function clauses rather than a `case` on an argument.
