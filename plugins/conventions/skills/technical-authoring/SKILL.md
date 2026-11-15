@@ -16,8 +16,9 @@ Check every sentence of a draft against these rules, including a sentence rewrit
 - No object relative clauses ("the values no case matches", "the type that the expression synthesises", "the
   values matched by no case"); no possessive relatives ("a function whose cases overlap").
 - No comma pivot from assertion to contrast ("It's yours, not a leftover").
-- No verbless clause after a comma qualifying the preceding noun ("the entries, empty for a type
-  statement").
+- No adjectival phrase or verbless clause after a comma qualifying the preceding noun, in prose or in
+  telegraphic text ("the entries, empty for a type statement"; "classes of the objects, each class with its
+  field names").
 - No colon standing for a connective ("records 1: disjunction cannot cancel").
 - No "that" after a consequential "so" unless readability or emphasis requires it ("parsed first, so that
   its errors take precedence").
