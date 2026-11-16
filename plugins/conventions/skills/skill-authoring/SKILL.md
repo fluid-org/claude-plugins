@@ -20,3 +20,4 @@ and comments apply to skills and are not repeated here.
 - Avoid positive overspecification; concentrate on antipatterns.
 - A rule names the problem, with an example of it; it does not prescribe the rewrite.
 - State the rule, without its reason or the failure it prevents.
+- Prefer "avoid" to "never" in a rule ("Avoid amending a commit", not "Never amend a commit").

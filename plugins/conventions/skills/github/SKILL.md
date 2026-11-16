@@ -28,9 +28,9 @@ technical-authoring skill. In addition:
 - Every push starts CI, so push once a unit of work is complete, not after each commit; while the user reviews
   an open pull request on GitHub, push each commit made in response
 - A small change made across several repositories (Claude settings, a `CLAUDE.md` line) goes on the branch active in the local checkout, or on `main` without a suitable checkout; no fresh branches or clones for it
-- Never leave uncommitted changes in the working tree, including changes not made in the session; commit them, or add generated files to `.gitignore` (and untrack any already committed)
-- Never add entries to `.git/info/exclude`
-- Fix a committed mistake with a new commit; never amend, and never `git stash`
+- Avoid leaving uncommitted changes in the working tree, including changes not made in the session; commit them, or add generated files to `.gitignore` (and untrack any already committed)
+- Avoid adding entries to `.git/info/exclude`
+- Fix a committed mistake with a new commit; avoid amending, and avoid `git stash`
 - A mechanical change (a move, a mass deletion, an import of files from elsewhere, regenerated output) is a
   separate commit, first on the branch where possible, with "(mechanical)" ending its subject; the reviewer
   then reads the other commits as a range in the web interface
@@ -40,7 +40,7 @@ technical-authoring skill. In addition:
 
 ## Permissions
 
-- When an action is refused for lack of permission, stop and report it; never work around the refusal
+- When an action is refused for lack of permission, stop and report it; avoid working around the refusal
   with another account, token or bypass flag
 - Destructive or organisation-wide changes need explicit approval: project board fields, branch
   protection, organisation settings, and any mutation that replaces rather than appends data
@@ -63,7 +63,7 @@ technical-authoring skill. In addition:
 - Delete a duplicate issue rather than close it, unless a third party created it
 - A subtask of an issue is a line in the task list of its body, not a GitHub sub-issue, unless a sub-issue or new issue is asked for
 - A sub-issue appears in neither the task list nor the **See also** paragraph of its parent, and the parent in neither of the sub-issue's; the sub-issue relation records the link
-- Re-read a body from GitHub before editing it; never edit from a copy
+- Re-read a body from GitHub before editing it; avoid editing from a copy
 - Keep checklist items in the body updated as the work completes: open items stay in the task list; a
   checked item moves to a `## Done/dropped` section before **See also**, by default nested under plain bullets that
   repeat its ancestors in the task list, with a dropped item struck through (`- [x] ~~item~~`); once no open

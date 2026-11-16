@@ -24,7 +24,7 @@ Load the coding-conventions skill first; it holds the rules shared with other im
   each a separate block with a separate open; qualify only where uses mix.
 - Before importing a name, check it is not already in scope: a name reaches a file through an `open`
   without `using` without ever being written, so check what every such open exports.
-- Name a synonym after what it denotes (`Tree`, `coKl`, `Fam-cat`), never by initials, primes or
+- Name a synonym after what it denotes (`Tree`, `coKl`, `Fam-cat`); avoid initials, primes and
   digits (`FD`, `RS'`, `S1`). When a binding appears only on `open` lines for it alone, spell it out; when it appears on one,
   drop it and apply the module in the open (`open M args using (…)`).
 - Bind a parameter's operations under the name of the parameter (`module 𝒞 = Category 𝒞`), not a decorated one
@@ -32,7 +32,7 @@ Load the coding-conventions skill first; it holds the rules shared with other im
   and `(let open M)` make names available to later parameter types; an `open` in the body does not
   reach the telescope.
 - With two category parameters 𝒞 and 𝒟, suffix each per-category parameter with the category
-  (`CM𝒞`/`CM𝒟`), never prime it.
+  (`CM𝒞`/`CM𝒟`); avoid priming it.
 
 ## Records
 
@@ -58,7 +58,7 @@ Load the coding-conventions skill first; it holds the rules shared with other im
   expected values and durations — and discuss it; run nothing until agreed. Prefer deterministic
   counts over timing; run the counting measurement first.
 - Three separate metrics: Agda type-checking time, GHC compile time, and binary run time. Time each
-  separately; never time a script that mixes them.
+  separately; avoid timing a script that mixes them.
 - Let the compile finish untimed, then time the binary alone; compilation is incremental, so a
   mixed timing means nothing.
 - Validate a change expected to be performance-neutral by the type-check and the baseline artefact

@@ -7,7 +7,7 @@ description: Shared conventions for code in any language (comments, docstrings, 
 
 ## Recording guidance
 
-- Never save guidance to Claude's memory, or to notes or any other file outside a repository. Record a
+- Avoid saving guidance to Claude's memory, or to notes or any other file outside a repository. Record a
   lasting rule in the skill it belongs to, in this plugin or in a skill of the project, and commit it.
   Project state belongs in the issue tracker.
 - Writing a skill: see the skill-authoring skill.
@@ -28,7 +28,7 @@ spec-implementor.
   "A signature without type parameters is a type". A fact may follow as the reason ("..., since ...").
 - No comment on a definition named after a construct of the specification or paper; the
   specification describes it. Refer to a construct by name, never by quoted notation.
-- Standard terms in comments and identifiers; never coin a word ("carry no type", not "typeless").
+- Standard terms in comments and identifiers; avoid coining a word ("carry no type", not "typeless").
 - No code identifiers in a comment or docstring, except parameters of the documented definition;
   describe the operation in words ("type resolution", not "resolve_type").
 - No notation from the specification or paper in a comment (`C[τs]`, `Γ ⊢ e`); write it in words,
@@ -45,7 +45,7 @@ spec-implementor.
 - Follow the specification's or paper's metavariables, not a library's: one name per sort (`cxt` for
   every context, whether the paper writes Γ or Δ; `ρ` for environments; `v`, `u` for values). Where
   names run short, a prime (`cxt'`); a suffix naming the content (`cxt_αs`, the context of type
-  parameters) only where a second prime would be needed; never a digit.
+  parameters) only where a second prime would be needed; avoid a digit.
 
 ## Code
 
@@ -70,9 +70,9 @@ spec-implementor.
 
 Shared by the Agda and Isabelle skills.
 
-- Never cite the paper or specification in a comment (sections, figures, rule names as references).
+- Avoid citing the paper or specification in a comment (sections, figures, rule names as references).
   State the mathematics; the paper cites the mechanisation, not the reverse.
-- Run every non-trivial check as a background Bash task with an explicit `timeout`; never two checkers
+- Run every non-trivial check as a background Bash task with an explicit `timeout`; avoid two checkers
   over one build directory.
 - Pull requests as in the github skill; bump the parent repository's submodule pointer once one merges.
   Refer to commits by their messages, not their hashes.
@@ -93,4 +93,4 @@ Shared by the Agda and Isabelle skills.
 - Report a build or CI run only if it fails; do not mention a pending or passing one, or say that a failure
   will be reported.
 - Refer to programs, commands and scripts by the names the repository gives them (their entries in
-  `pyproject.toml`, say), never by descriptions such as "driver".
+  `pyproject.toml`, say); avoid descriptions such as "driver".
