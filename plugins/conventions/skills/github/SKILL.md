@@ -19,7 +19,11 @@ technical-authoring skill. In addition:
 
 ## Commits
 
-- Always work on a branch, for the current issue when there is one, since new work does not need an issue; never commit directly to the default branch, except for skill fixes, which go directly to `main`; administrative changes (version and dependency pins, submodule pointers, and build, CI and reporting tooling such as Makefiles, workflows, scripts and status pages), which go directly on the default branch once checked locally, without a pull request, since pull requests are for content; and, in a repository with milestone branches, minor docs, process changes and trivial fixes, which go directly on the current milestone branch
+- Always work on a branch, for the current issue when there is one, since new work does not need an issue
+- Avoid committing directly to the default branch, with three exceptions:
+  - skill fixes go directly to `main`
+  - administrative changes (version and dependency pins, submodule pointers, and build, CI and reporting tooling such as Makefiles, workflows, scripts and status pages) go directly on the default branch once checked locally, without a pull request, since pull requests are for content
+  - in a repository with milestone branches, minor docs, process changes and trivial fixes go directly on the current milestone branch
 - Name the branch after the issue, number first (`247-syntax`), or after the work when there is no issue (`min-max`); when a feature branch for the issue collects the work of several subtasks, name the feature branch after the issue and each sub-branch off it after its subtask
 - While a branch is checked out, all work goes on it, related to its purpose or not; a new branch only when asked for
 - Work in the existing local clone, on the branch checked out there; a worktree only when asked for, or when another session is modifying
@@ -93,7 +97,7 @@ technical-authoring skill. In addition:
 ## Project board
 
 - To read or set an issue's board Status, query the `projectItems` of the issue (in fluid,
-  `script/issue-status.sh <issue> [Status]`, which also adds an absent issue to the board); never
+  `script/issue-status.sh <issue> [Status]`, which also adds an absent issue to the board); avoid
   `gh project item-list`, which fetches the whole board and trips the GraphQL rate limit
 - Closing an issue does not change its Status; set `Done` or `Rejected` explicitly
 - After changing board state, verify the project view
@@ -117,5 +121,5 @@ technical-authoring skill. In addition:
 - Set `GH_TOKEN` per repository in `.claude/settings.local.json` (gitignored), as
   `{"env": {"GH_TOKEN": "<fine-grained-pat>"}}`; the token needs read and write on pull requests and
   issues, and read, write and admin on organisation projects
-- Never run `gh auth refresh` or `gh auth login` without `--with-token`, which replaces the
+- Avoid running `gh auth refresh` or `gh auth login` without `--with-token`, which replaces the
   fine-grained PAT with an OAuth token that lacks private repository access

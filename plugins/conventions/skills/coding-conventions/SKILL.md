@@ -23,11 +23,11 @@ spec-implementor.
 - One line where possible, telegraphic as defined in the technical-authoring skill ("Collapse duplicate
   rows", not "This collapses the duplicate rows"); bare imperative for operations ("Collapse", not
   "Collapses"). Same in test fixtures.
-- A comment speaks of the definition it sits on, as an operation or a noun phrase, never as a bare
-  fact about the domain: "Bind a function at its type when its signature has no type parameters", not
-  "A signature without type parameters is a type". A fact may follow as the reason ("..., since ...").
+- A comment describes its definition as an operation or a noun phrase; avoid a bare fact about the domain
+  ("A signature without type parameters is a type" for "Bind a function at its type when its signature has
+  no type parameters"). A fact may follow as the reason ("..., since ...").
 - No comment on a definition named after a construct of the specification or paper; the
-  specification describes it. Refer to a construct by name, never by quoted notation.
+  specification describes the construct. Refer to a construct by name; avoid quoted notation.
 - Standard terms in comments and identifiers; avoid coining a word ("carry no type", not "typeless").
 - No code identifiers in a comment or docstring, except parameters of the documented definition;
   describe the operation in words ("type resolution", not "resolve_type").
