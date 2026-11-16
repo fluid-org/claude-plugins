@@ -19,10 +19,10 @@ technical-authoring skill. In addition:
 
 ## Commits
 
-- Always work on a branch, for the current issue when there is one, since new work does not need an issue
+- Always work on a branch, for the current issue when there is one; new work does not need an issue
 - Avoid committing directly to the default branch, with three exceptions:
   - skill fixes go directly to `main`
-  - administrative changes (version and dependency pins, submodule pointers, and build, CI and reporting tooling such as Makefiles, workflows, scripts and status pages) go directly on the default branch once checked locally, without a pull request, since pull requests are for content
+  - administrative changes (version and dependency pins, submodule pointers, and build, CI and reporting tooling such as Makefiles, workflows, scripts and status pages) go directly on the default branch once checked locally, without a pull request
   - in a repository with milestone branches, minor docs, process changes and trivial fixes go directly on the current milestone branch
 - Name the branch after the issue, number first (`247-syntax`), or after the work when there is no issue (`min-max`); when a feature branch for the issue collects the work of several subtasks, name the feature branch after the issue and each sub-branch off it after its subtask
 - While a branch is checked out, all work goes on it, related to its purpose or not; a new branch only when asked for
@@ -121,5 +121,4 @@ technical-authoring skill. In addition:
 - Set `GH_TOKEN` per repository in `.claude/settings.local.json` (gitignored), as
   `{"env": {"GH_TOKEN": "<fine-grained-pat>"}}`; the token needs read and write on pull requests and
   issues, and read, write and admin on organisation projects
-- Avoid running `gh auth refresh` or `gh auth login` without `--with-token`, which replaces the
-  fine-grained PAT with an OAuth token that lacks private repository access
+- Avoid running `gh auth refresh` or `gh auth login` without `--with-token`
