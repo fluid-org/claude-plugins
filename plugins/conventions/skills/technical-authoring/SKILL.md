@@ -72,8 +72,9 @@ Check every sentence of a draft against these rules, including a sentence rewrit
 - No stand-in for the referent ("the algebra", "the structure").
 - No "own" after a possessive, whether a possessive determiner or a genitive ("the node's own positions", "its
   own block", "a commit of its own", "on its own").
-- No coined or non-standard term ("shift" for translation), in the text or in conversation; check that a term
-  is standard before relying on it.
+- No coined or non-standard term ("shift" for translation) and no standard term in a non-standard sense
+  ("derived instance" for an instance obtained from a constraint), in the text or conversation; check
+  that a term is standard before relying on it.
 - No "meet" or "join" as a verb.
 - No subordinating "though"; "even though" and adverbial "though" are fine.
 - No telling the reader what they "should use"; a trade-off is reported factually.
