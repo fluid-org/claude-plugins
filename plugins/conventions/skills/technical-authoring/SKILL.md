@@ -28,8 +28,12 @@ Check every sentence of a draft against these rules, including a sentence rewrit
 - No "following" for agreement or imitation ("following mypy", "following the call-union rule"). No sentence
   ending on "do" or "does" standing for a verb phrase ("as mypy does").
 - No clause-final pro-forms ("leaves none", "the others", "so does").
-- No pronoun where the subject of the main clause or a nearer noun could also be its antecedent ("rejects a
-  program by exit status 3 if it is ill-formed").
+- No reference back on which the main point of the sentence depends, whether a pronoun, demonstrative phrase
+  or new noun for a thing already named ("a vertex maps to the vertices with it as last dependent"); no
+  pronoun standing for a whole statement ("the two must still behave as unrelated, which confirms that
+  storage identity carries no meaning").
+- No pronoun when the subject of the main clause or a nearer noun could also be its antecedent, by fitting
+  the grammar or being of the same sort ("rejects a program by exit status 3 if it is ill-formed").
 - No bare noun for a set already introduced ("no case" for "none of the cases"); no definite reference in a
   general claim ("the variable pattern matches any shape").
 - No closing clause restating what the preceding text already says.
@@ -40,7 +44,8 @@ Check every sentence of a draft against these rules, including a sentence rewrit
   lists, and where the singular reads more naturally, as in an example.
 - No gapping ("1 + 2 is an int and 1 + 2.0 a float").
 - No article or preposition repeated across an enumeration ("the residual and the remaining type", "subtypes
-  of bool or of float").
+  of bool or of float"); no subject repeated as a pronoun across coordinated predicates ("the subvalues
+  could be stored once, and they must still behave as unrelated").
 - No chains of possessives or of-phrases ("the typing specification's algorithm for calls"); no possessive the
   context implies ("their overloads").
 - No free relatives ("what it matches").
