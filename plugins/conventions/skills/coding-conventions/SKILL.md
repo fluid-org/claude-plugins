@@ -28,8 +28,9 @@ spec-implementor.
 - Avoid a comment on a definition named after a construct of the specification or paper, and quoted
   notation for a construct.
 - Avoid coining a word in comments and identifiers ("typeless").
-- Avoid code identifiers in a comment or docstring, except parameters of the documented definition
-  ("resolve_type").
+- Avoid code identifiers in a comment or docstring ("resolve_type"), except parameters of the documented
+  definition, and the name of another definition when the comment needs that name to make its point
+  ("Same as override, except ...").
 - Avoid notation from the specification or paper in a comment (`C[τs]`, `Γ ⊢ e`).
 - A transitional definition (a bridge between an old and a new representation, say) states the
   anomaly and the change that removes it ("delete with the α-graph").
