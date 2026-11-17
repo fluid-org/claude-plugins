@@ -49,7 +49,7 @@ Load the coding-conventions skill first; it holds the rules shared with other im
 - Every non-trivial check: `bash ~/.claude/bin/watch-agda.sh <targets>` as a background Bash task with
   `timeout` 600000. Without the timeout a run over 120 s is killed and reported as interrupted.
 - `pgrep -x agda` before a check; the build directory is `_build`.
-- No Monitor tool or detached runs. If a check would exceed ten minutes, split it into sequential
+- Avoid the Monitor tool and detached runs. If a check would exceed ten minutes, split it into sequential
   `watch-agda.sh` calls on intermediate targets.
 
 ## Performance

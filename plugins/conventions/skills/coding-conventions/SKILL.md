@@ -23,17 +23,14 @@ spec-implementor.
 - One line where possible, telegraphic as defined in the technical-authoring skill ("Collapse duplicate
   rows", not "This collapses the duplicate rows"); bare imperative for operations ("Collapse", not
   "Collapses"). Same in test fixtures.
-- A comment describes its definition as an operation or a noun phrase; avoid a bare fact about the domain
-  ("A signature without type parameters is a type" for "Bind a function at its type when its signature has
-  no type parameters"). A fact may follow as the reason ("..., since ...").
-- No comment on a definition named after a construct of the specification or paper; the
-  specification describes the construct. Refer to a construct by name; avoid quoted notation.
-- Standard terms in comments and identifiers; avoid coining a word ("carry no type", not "typeless").
-- No code identifiers in a comment or docstring, except parameters of the documented definition;
-  describe the operation in words ("type resolution", not "resolve_type").
-- No notation from the specification or paper in a comment (`C[τs]`, `Γ ⊢ e`); write it in words,
-  naming parameters of the documented definition where needed. Prefer a name that makes the comment
-  unnecessary.
+- Avoid a comment stating a bare fact about the domain in place of describing the commented definition ("A signature
+  without type parameters is a type"); a fact may follow as the reason ("..., since ...").
+- Avoid a comment on a definition named after a construct of the specification or paper, and quoted
+  notation for a construct.
+- Avoid coining a word in comments and identifiers ("typeless").
+- Avoid code identifiers in a comment or docstring, except parameters of the documented definition
+  ("resolve_type").
+- Avoid notation from the specification or paper in a comment (`C[τs]`, `Γ ⊢ e`).
 - A transitional definition (a bridge between an old and a new representation, say) states the
   anomaly and the change that removes it ("delete with the α-graph").
 - A comment sits on the definition it describes, not on a caller.
@@ -50,10 +47,10 @@ spec-implementor.
 ## Code
 
 - Build on existing helpers and naming; scan the codebase before writing.
-- No defensive coding: assert a case that shouldn't arise rather than returning a safe default.
-  User-facing failures go through the monad, with a message naming the construct and the offending
+- Avoid defensive coding, such as a safe default returned for a case that shouldn't arise.
+- User-facing failures go through the monad, with a message naming the construct and the offending
   element, without pronouns ("Class C extends int, which is not a class").
-- No user-facing text (help text, messages, labels) breaking the technical-authoring skill or running beyond
+- Avoid user-facing text (help text, messages, labels) breaking the technical-authoring skill or running beyond
   telegraphic form ("Prints the version of the tool, to include in bug reports").
 - Inline a local used once; bind an expression used twice once.
 - In Haskell and PureScript, a local that depends only on the arguments goes in `where`, not `let`.
@@ -79,7 +76,7 @@ Shared by the Agda and Isabelle skills.
 
 ## Tests
 
-- No test whose only purpose is to pin a fixed bug.
+- Avoid a test whose only purpose is to pin a fixed bug.
 
 ## Commits
 
