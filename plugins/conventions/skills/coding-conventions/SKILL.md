@@ -51,6 +51,7 @@ spec-implementor.
 - Avoid defensive coding, such as a safe default returned for a case that shouldn't arise.
 - User-facing failures go through the monad, with a message naming the construct and the offending
   element, without pronouns ("Class C extends int, which is not a class").
+- Avoid instructions for fixing the failure in an error message ("Macros missing; run the download script").
 - Avoid user-facing text (help text, messages, labels) breaking the technical-authoring skill or running beyond
   telegraphic form ("Prints the version of the tool, to include in bug reports").
 - Inline a local used once; bind an expression used twice once.
