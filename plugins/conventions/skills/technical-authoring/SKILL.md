@@ -62,6 +62,7 @@ Check every sentence of a draft against these rules, including a sentence rewrit
   round the rule ("The type checker mypy rejects").
 - Avoid "where" for a condition ("where the list is empty").
 - Avoid a construction before its goal, and a consequence before its reason.
+- Avoid a declarative statement intended as an instruction ("a further release has a post-release suffix").
 
 ## Word choice
 
