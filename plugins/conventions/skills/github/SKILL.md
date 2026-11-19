@@ -112,8 +112,9 @@ technical-authoring skill. In addition:
 
 ## Meeting issues
 
-- Meeting issues are titled `YYYY-MM-DD`; set Type to `Meeting`
-- Body sections: `## Adjacent meetings` (links to previous), then `## To discuss` containing `### Resolved since [date]`, `### New issues since [date]`, `### Work since [date]`
+- Put the meeting date (`YYYY-MM-DD`) in the title, with any other details identifying the meeting (`Dominic 1-to-1 2026-11-19`)
+- Set Type to `Meeting`
+- Body sections: `## Adjacent meetings` (links to previous meetings), then `## To discuss`
 - Bullet lists of bare `#N` for issues; brief notes for work items
 
 ## Token setup
