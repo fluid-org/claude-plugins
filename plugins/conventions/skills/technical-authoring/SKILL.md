@@ -111,7 +111,6 @@ precedence over telegraphic style: keep any word without which the text becomes 
 
 - Check a date or time against the clock or the record before stating it.
 - Code comments: see the coding-conventions skill.
-- Avoid an indirect statement of a task in a checklist or issue ("we could perhaps move X").
 - Avoid meta-commentary about the document (moves, supersessions) in the text or in change markup.
 - Avoid keeping, contrasting or annotating a superseded claim.
 - Avoid reporting completed items alongside remaining items.

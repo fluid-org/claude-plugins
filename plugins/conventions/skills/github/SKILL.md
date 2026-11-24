@@ -10,8 +10,8 @@ description: Conventions for commits, GitHub issues, pull requests, the project 
 Commit messages, issue and pull request titles and bulleted lists are telegraphic, as defined in the
 technical-authoring skill. In addition:
 
-- Titles and task-list items are noun phrases naming the thing rather than the action ("Syntax of types", not "Define the syntax of types")
-- Where a noun phrase would need a participle ("Maybe replaced by Optional"), use the imperative ("Replace Maybe by Optional")
+- Write titles and task-list items as noun phrases naming the outcome rather than the action ("Syntax of types", not "Define the syntax of types")
+- When naming the outcome would be unclear, use the imperative ("Replace Maybe by Optional")
 - Avoid the repository name in a title
 - Commit message a subject line only, succinctly describing the change as an imperative or noun phrase; avoid a body
 - Names of workflows, jobs and steps in GitHub Actions likewise: a noun phrase for a workflow or job, the
