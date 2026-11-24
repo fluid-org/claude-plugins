@@ -28,10 +28,9 @@ Check every sentence of a draft against these rules, including a sentence rewrit
 - Avoid "following" for agreement or imitation ("following mypy", "following the call-union rule"), and a
   sentence ending on "do" or "does" standing for a verb phrase ("as mypy does").
 - Avoid clause-final pro-forms ("leaves none", "the others", "so does").
-- Avoid making the main point of a sentence depend on a reference back, whether a pronoun, demonstrative
-  phrase or new noun for a thing already named ("a vertex maps to the vertices with it as last dependent"),
-  and a pronoun standing for a whole statement ("the two must still behave as unrelated, which confirms that
-  storage identity carries no meaning").
+- Avoid making the main point of a sentence depend on an unclear reference back ("a vertex maps to the
+  vertices with it as last dependent"), and a pronoun standing for a whole statement ("the two must still
+  behave as unrelated, which confirms that storage identity carries no meaning").
 - Avoid a pronoun when the subject of the main clause or a nearer noun could also be its antecedent, by
   fitting the grammar or being of the same sort ("rejects a program by exit status 3 if it is ill-formed").
 - Avoid a bare noun for a set already introduced ("no case" for "none of the cases"), and a definite
