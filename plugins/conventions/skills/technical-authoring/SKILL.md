@@ -19,7 +19,7 @@ Check every sentence of a draft against these rules, including a sentence rewrit
 - Avoid an adjectival phrase or verbless clause after a comma qualifying the preceding noun, in prose or in
   telegraphic text ("the entries, empty for a type statement"; "classes of the objects, each class with its
   field names").
-- Avoid a colon standing for a connective ("records 1: disjunction cannot cancel").
+- Avoid a colon standing for a connective ("the build fails: a file is missing").
 - Avoid "that" after a consequential "so" unless readability or emphasis requires it ("parsed first, so that
   its errors take precedence").
 - Avoid clefts ("X is what makes...", "this is where...", "is exactly...").
@@ -96,9 +96,8 @@ Check every sentence of a draft against these rules, including a sentence rewrit
 
 Telegraphic text omits articles and a final full stop. Each item makes one main point and uses framing
 only when needed to make the point clear ("Rebinds variable"). A parenthesis or a clause after a
-semicolon may clarify or qualify the
-main point. Text of several sentences is prose, with full stops. Clarity takes
-precedence over telegraphic style: keep any word without which the text becomes ambiguous or hard to read.
+semicolon may clarify or qualify the main point. Avoid streamlining to the point where the text becomes
+ambiguous or hard to read.
 
 - Section headings, table cells, figure captions, rule side conditions, todo, design and planning notes,
   and the items of a bulleted or numbered list are telegraphic. Steps of a procedure take the imperative; a
