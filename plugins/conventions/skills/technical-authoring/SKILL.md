@@ -46,7 +46,6 @@ Check every sentence of a draft against these rules, including a sentence rewrit
   "subtypes of bool or of float"), or a subject as a pronoun across coordinated predicates ("the subvalues
   could be stored once, and they must still behave as unrelated").
 - Avoid chains of possessives or of-phrases ("the typing specification's algorithm for calls").
-- Avoid a possessive implied by the context ("publish milestone and its release notes").
 - Avoid free relatives ("what it matches").
 - Avoid a symbol unbound by the sentence or by the judgement form just before it (an unbound τ for the return
   type).
@@ -105,6 +104,7 @@ precedence over telegraphic style: keep any word without which the text becomes 
   and the items of a bulleted or numbered list are telegraphic. Steps of a procedure take the imperative; a
   list of questions keeps full sentences.
 - A gloss in apposition keeps one leading article and no other: "head, a literal, class or list of length n".
+- Avoid a possessive implied by the context ("publish milestone and its release notes").
 - Avoid a figure caption of more than one line where a single line is possible.
 
 ## Comments and checklists
