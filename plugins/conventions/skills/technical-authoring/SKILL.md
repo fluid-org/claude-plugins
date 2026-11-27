@@ -45,8 +45,8 @@ Check every sentence of a draft against these rules, including a sentence rewrit
 - Avoid repeating an article or preposition across an enumeration ("the residual and the remaining type",
   "subtypes of bool or of float"), or a subject as a pronoun across coordinated predicates ("the subvalues
   could be stored once, and they must still behave as unrelated").
-- Avoid chains of possessives or of-phrases ("the typing specification's algorithm for calls"), and a
-  possessive the context implies ("their overloads").
+- Avoid chains of possessives or of-phrases ("the typing specification's algorithm for calls").
+- Avoid a possessive implied by the context ("publish milestone and its release notes").
 - Avoid free relatives ("what it matches").
 - Avoid a symbol unbound by the sentence or by the judgement form just before it (an unbound τ for the return
   type).
