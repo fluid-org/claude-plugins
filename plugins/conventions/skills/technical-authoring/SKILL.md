@@ -16,7 +16,7 @@ Check every sentence of a draft against these rules, including a sentence rewrit
 - Avoid object relative clauses ("the values no case matches", "the type that the expression synthesises",
   "the values matched by no case") and possessive relatives ("a function whose cases overlap").
 - Avoid a comma pivot from assertion to contrast ("It's yours, not a leftover").
-- Avoid an adjectival phrase or verbless clause after a comma qualifying the preceding noun, in prose or in
+- Avoid an adjective phrase or verbless clause after a comma qualifying the preceding noun, in prose or
   telegraphic text ("the entries, empty for a type statement"; "classes of the objects, each class with its
   field names").
 - Avoid a colon standing for a connective ("the build fails: a file is missing").
