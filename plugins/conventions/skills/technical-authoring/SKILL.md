@@ -100,7 +100,8 @@ ambiguous or hard to read.
 
 - Section headings, table cells, figure captions, rule side conditions, todo, design and planning notes,
   and the items of a bulleted or numbered list are telegraphic. Steps of a procedure take the imperative; a
-  list of questions keeps full sentences.
+  list of questions keeps full sentences. The context of an issue or pull request body is prose, with full
+  stops, even when the items of its task list are telegraphic.
 - A gloss in apposition keeps one leading article and no other: "head, a literal, class or list of length n".
 - Avoid a possessive implied by the context ("publish milestone and its release notes").
 - Avoid a figure caption of more than one line where a single line is possible.

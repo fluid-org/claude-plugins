@@ -74,7 +74,8 @@ technical-authoring skill. In addition:
   item remains, the heading goes and the checked items stand as the task list
 - Do not hard-wrap paragraphs in a body; omit the language tag on a code fence rather than guess it
 - Keep a body as simple as possible: paragraphs, the task list, tables where they serve and **See also**, with no other headings or structure, except `###` subheadings dividing a task list that covers several kinds of work, and `####` subheadings dividing a `###` section in the same way; meeting issues excepted
-- Keep a body minimal: a line or two of context and the task items, each naming the code or text it concerns; no account of how the problem was found or of the course of the discussion behind it
+- Keep a body minimal: a sentence or two of context in prose, then task items naming the code or text concerned
+- Leave out how the problem was found and how the discussion behind it went
 - Use existing labels; give a new label no description
 - Avoid over-dependence on specific repository states, e.g. mentioning branch names or pull request numbers or known interim states
 - Avoid mentioning pending work without its issue
